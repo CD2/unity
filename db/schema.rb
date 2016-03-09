@@ -11,27 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307225657) do
-
-  create_table "block_banners", force: :cascade do |t|
-    t.string   "title"
-    t.string   "body"
-    t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "block_testimonials", force: :cascade do |t|
-    t.integer  "testimonial_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  create_table "block_texts", force: :cascade do |t|
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160304201351) do
 
   create_table "blocks", force: :cascade do |t|
     t.string   "name"
@@ -42,22 +22,6 @@ ActiveRecord::Schema.define(version: 20160307225657) do
     t.string   "specialised_block_type"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-  end
-
-  create_table "blog_tags", force: :cascade do |t|
-    t.integer  "tag_id"
-    t.integer  "blog_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "blogs", force: :cascade do |t|
-    t.string   "name"
-    t.text     "body"
-    t.boolean  "published"
-    t.string   "banner"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "enquiries", force: :cascade do |t|
@@ -85,16 +49,9 @@ ActiveRecord::Schema.define(version: 20160307225657) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tags", force: :cascade do |t|
+  create_table "stories", force: :cascade do |t|
     t.string   "name"
-    t.string   "machine_name"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "testimonials", force: :cascade do |t|
-    t.string   "quote"
-    t.string   "author"
+    t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

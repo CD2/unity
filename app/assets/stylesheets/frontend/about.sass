@@ -1,65 +1,139 @@
 #introduction_panel
-  margin: 50px 0 20px
-  
+  background: $dark_primary_color
+  padding-bottom: 120px
+  position: relative
+  background-image: image_url('footer_people.png')
+  background-repeat: repeat-x
+  background-position-y: 100%
   #introduction_panel_inner
-    max-width: $site_width
+    max-width: $site-width - 100px
     margin: 0 auto
+    color: white
     text-align: center
+    font-size: 1.125em
+    padding: 40px 0 0
 
     h1
-      color: $light_primary_color
-      font-weight: normal
-
+      font-weight: 300
+      font-size: 2.5em
+    h2
+      text-transform: uppercase
+      font-size: 1em
     p
-      max-width: 700px
-      margin: 0 auto
-      color: rgba(0, 0, 0, 0.5)
       line-height: 1.5em
+  img
+    width: 100%
+    position: absolute
+    bottom: 0
 
-#people_container
-  +flexbox
-  +flex-wrap(wrap)
-  margin-top: 30px
-
-  .person
-    color: $primary_color
-    text-align: center
-    margin: 15px 20px 20px
-    text-transform: uppercase
-    line-height: 1em
-
-    .image_container
-      border-radius: 100%
-      background: $grey
-      width: 125px
-      height: 125px
-      margin-bottom: 15px
-
-      img
-        width: inherit
-        height: inherit
-
-    .name
-      font-weight: bold
-      margin: 0
-
-    .position
-      font-style: italic
-      font-size: 0.875em
-
-
-
-
-#call_to_action_panel
-  background: $light_primary_color
-  height: 250px
-  +flexbox
-  +align-items(center)
-
-  #call_to_action_panel_inner
-    max-width: $site_width
+#main_content_panel
+  color: rgba(black, 0.6)
+  text-align: center
+  font-size: 1.125em
+  margin: 100px 0 50px
+  line-height: 1.5em
+  #main_content_panel_inner
+    width: $site-width
     margin: 0 auto
-    font-size: 1.75em
-    text-align: center
+
+    h1
+      font-weight: 300
+      margin: 60px 0
+
+
+#our_people_panel
+  background: $very_light_grey
+  height: 500px
+  text-align: center
+  color: rgba(black, 0.6)
+  padding: 50px
+
+  #our_people_panel_inner
+    width: $site-width
+    margin: 0 auto
+    height: 100%
+
+    h1
+      font-weight: 300
+      font-size: 2.125em
+
+
+    #people_container
+      +flexbox
+      +justify-content(space-around)
+      margin: 50px auto
+
+      .person
+        text-align: center
+        line-height: 1.5em
+        color: rgba(black, 0.5)
+        .image
+          width: 125px
+          height: 125px
+          border-radius: 100%
+          background: $grey
+          overflow: hidden
+          margin: 30px
+
+          img
+            width: 100%
+
+        .name
+          font-weight: 700
+          text-transform: uppercase
+
+        .title
+          font-size: 0.875em
+
+
+#blue_dots_panel
+  +flexbox
+  margin-bottom: 100px
+
+  #left_column, #right_column
+    +flex-grow(1)
+  #left_column_inner, #right_column_inner
+    max-width: $site-width /2
+    padding: 40px
+
+  #left_column_inner
+    margin-left: auto
+  #right_column_inner
+    margin-right: auto
+
+  #left_column
+    background: #F0F1F1
+    #left_column_inner
+      h1 
+        font-weight: 300
+        font-size: 2.125em
+        line-height: 2.5em
+        color: rgba(black, 0.6)
+
+  #right_column
+    background: $light_primary_color
     color: white
-    text-transform: uppercase
+    font-size: 1.125em
+
+    #right_column_inner
+    
+      h1
+        font-weight: 300
+        font-size: 2.5em
+      h2
+        text-transform: uppercase
+        font-size: 1em
+        line-height: 1.75em
+        margin: 30px 0
+      p
+        line-height: 1.5em
+
+      a
+        padding: 20px 30px
+        border-radius: 25px
+        border: 1px solid white
+        display: block
+        text-align: center
+        cursor: pointer
+        max-width: 75%
+        margin: 40px 0

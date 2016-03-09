@@ -1,78 +1,52 @@
 - provide :title, @page.title
 - provide :body_class, 'about_page'
 - provide :menu_item, '/about'
-#banner_container
-  #banner_container_inner
-    #banner_text
-      %h1 About Us
-      %p We provide a professional cleaning service for offces and business premises in Norwich and Norfolk
+
 
 #introduction_panel
   #introduction_panel_inner
-    %h1 Offce cleaning contractors for Norwich, Norfolk.
-    %p We provide a professional cleaning service for offces and business premises in Norwich and Norfolk. Our complete offce cleaning service is tailored to your unique needs, with daily to weekly contracts and one-off 'deep cleans' available.
+    %h1 Who are Unity
+    %h2 Protecting your most valuble assets
+    %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
 
-#main_panel
-  #main_panel_inner.columns
-    #left_content 
-      %h1 our staff
-      %p.emphasis Employed by us. Trained by us. Loved by you.
-      %p We never use agency or temporary staff. Every cleaner is employed by us, uniformed and fully trained to our own exacting standards. We think you'll love them!
-      %p Your cleaners receive extra client-specific training at your place of work, so they are fully aware of your personal requirements and expectations. Continual monitoring ensures high standards are maintained throughout our contract with you.
-      %p We also know that it is important for you to like and trust our staff, so our training covers people skills not just cleaning. You will be introduced to the cleaner responsible for your premises, and the same cleaner will clean each week (allowing for the usual leave such as holidays).
-      %p Our policy of employing, training and monitoring our own professional people sets us apart from many our competitors, and allows you to have 100% confidence in our staff.
-      %h1 years of experience
-      %p.emphasis Employed by us. Trained by us. Loved by you.
-      %p We never use agency or temporary staff. Every cleaner is employed by us, uniformed and fully trained to our own exacting standards. We think you'll love them!
-      %p Your cleaners receive extra client-specific training at your place of work, so they are fully aware of your personal requirements and expectations. Continual monitoring ensures high standards are maintained throughout our contract with you.
+#main_content_panel
+  #main_content_panel_inner
+    %h1 Physician Led Occupational Health and Wellbeing Services
+    %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
+    %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
 
+#our_people_panel
+  #our_people_panel_inner
+    %h1 Our Team
 
-    #right_content
-      .block.light.narrow
-        %h3 who's in your office?
-        Our staff are:
-        %ul
-          %li Fully employed by us
-          %li Fully trained by us
-          %li Trained specifically for your premises
-          %li Monitored and inspected
-          %li Uniformed and CRB checked
-          %li Known to you
+    #people_container
+      .person
+        .image
+        .name Person Surename
+        .title Job Title
 
-      #people_container
-        .person
-          .image_container
-          .name debbie elliot
-          .position director
-        .person
-          .image_container= image_tag 'person_placeholder.png'
-          .name debbie elliot
-          .position director
-        .person
-          .image_container= image_tag 'person_placeholder.png'
-          .name debbie elliot
-          .position director
-        .person
-          .image_container= image_tag 'person_placeholder.png'
-          .name debbie elliot
-          .position director
-        .person
-          .image_container= image_tag 'person_placeholder.png'
-          .name debbie elliot
-          .position director
+      .person
+        .image
+        .name Person Surename
+        .title Job Title
 
+      .person
+        .image
+        .name Person Surename
+        .title Job Title
 
-#call_to_action_panel
-  #call_to_action_panel_inner
-    %b can we quote you happy?
-    %br
-    call us on 
-    %b 01603 783800
-    %br
-    or 
-    %b send us a message
+      .person
+        .image
+        .name Person Surename
+        .title Job Title
 
-#testimonial_panel
-  #testimonial_panel_inner.testimonial_container
-    .quote "We have found Executive Maintenance to be extremely efficient, trustworthy and co-operative. We would not hesitate in recommending them."
-    .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.
+#blue_dots_panel
+  #left_column
+    #left_column_inner
+      %h1 Highly Qualified and Accredited
+  #right_column
+    #right_column_inner
+      %h1 Looking for more information
+      %h2 we’re commited to providing high quality, trustworth health and wellbeing
+      %p If you have any questions regarding anything on this site, need more information or are interested in talking to us about some of our services, please get in touch and we’ll be more than happy to help.
+      = link_to '01603 250059', 'tel:01603250059', class: 'action'
