@@ -5,6 +5,7 @@
   font-size: 0.875em
   padding-top: 10px
   margin-bottom: 30px
+  padding: 0 20px
   
   #header_container_inner
     max-width: $site_width
@@ -26,6 +27,7 @@
           margin-left: 20px
           display: inline-block
 
+
       #main_menu_container
         font-weight: 600
         margin-top: 20px
@@ -36,3 +38,6 @@
           display: inline-block
           &.active
             border-bottom: 3px solid $light_primary_color
+
+          @media screen and (max-width: 970px)
+            margin-left: 10px
