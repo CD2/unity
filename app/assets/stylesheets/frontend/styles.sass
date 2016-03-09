@@ -16,6 +16,12 @@ body.blog_page
 body.contact_page
   @import contact
 
+body.resource_page
+  @import resource
+
+body.service_page
+  @import service
+
 
 #banner_container
   color: white
@@ -23,6 +29,8 @@ body.contact_page
   background: $primary_color
   padding-top: 40px
   position: relative
+  background-position: 50%
+  background-size: cover
 
   #banner_container_inner
     max-width: $site-width
@@ -36,23 +44,9 @@ body.contact_page
       margin: 0
     >p
       font-size: 1.125em
-      width: 80%
       margin: 10px 0
       font-weight: 500
-      color: rgba(white, 0.7)
 
-    #banner_content
-      width: 65%
-      padding-top: 20px
-
-      h1
-
-      p
-        text-transform: uppercase
-        line-height: 1.5em
-        font-size: 1.125em
-        width: 80%
-        margin: 20px 0
 
   #image_container
     position: absolute
@@ -67,3 +61,21 @@ body.contact_page
 
       &:first-child
         width: 60%
+
+#navigation_control
+  background: $dark_grey
+  padding: 30px 0
+  font-size: 1.25em
+  text-transform: uppercase
+  margin-bottom: 40px
+  #navigation_control_inner
+    max-width: $site-width
+    margin: 0 auto
+    position: relative
+    a
+      color: rgba(white, 0.75)
+      cursor: pointer
+      line-height: 2em
+
+    a:nth-child(2)
+      float: right

@@ -29,6 +29,8 @@ module ExecutiveMaintenanceWebsite
     config.x.layout_blocks['about'] = {
       # main_content: :block_text,
     }
-
+    config.x.layout_blocks['resource'] = {
+      # main_content: :block_text,
+    }
   end
 end

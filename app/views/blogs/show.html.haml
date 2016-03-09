@@ -7,15 +7,19 @@
     %h1= @blog.name
     %p= @blog.updated_at.strftime("%B %Y")
 
+  :sass
+    hi
+      hi
   - if @blog.banner.path
     :sass
       #banner_container
-        background-image: url(@blog.banner.path)
+        background-image: url("#{@blog.banner}")
 
 #blog_body
   #blog_body_inner
     = raw @blog.body
 
-#pagination_control
-  #pagination_control_inner
-    %span < Last Post
+
+#navigation_control
+  #navigation_control_inner
+    = link_to '< Last Post', '#'

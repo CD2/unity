@@ -1,0 +1,239 @@
+#service_teaser_container
+  #service_teaser_container_inner
+    width: $site-width
+    margin: 0 auto
+
+    #left_column, #right_column
+      width: 50%
+      display: inline-block
+
+    #left_column
+      .service_teaser
+        background: #E8E8E9
+        &:nth-child(even)
+          background: #F0F1F1
+        img
+          right: 20px
+
+    #right_column
+      float: right
+      
+      .service_teaser
+        .service_teaser_inner
+          margin-left: auto
+        background: #F0F1F1
+        text-align: right
+        &:nth-child(even)
+          background: #E8E8E9
+
+        img
+          left: 20px
+
+    .service_teaser
+      position: relative
+      width: 100%
+      height: 320px
+      padding: 30px 40px
+      box-sizing: border-box
+      .service_teaser_inner
+        width: 80%
+
+        h1
+          margin: 0
+          color: $primary_color
+          font-size: 1.75em
+        p
+          font-weight: 300
+          line-height: 1.875em
+          margin: 25px 0
+          color: rgba(black, 0.8)
+
+        a
+          text-align: center
+          display: inline-block
+          width: 150px
+          height: 45px
+          line-height: 45px
+          border-radius: 22.5px
+          color: white
+          z-index: 2
+          position: relative
+          font-weight: 900
+          text-transform: uppercase
+          font-size: 0.875em
+
+          &.blue
+            background: #458CC4
+          &.purple
+            background: #9360A7
+          &.pink
+            background: #EC5090
+          &.keppel
+            background: #2FB9ED
+          &.green
+            background: #2FAF6A
+          &.red
+            background: #ED635A
+          &.duke
+            background: #4862AA
+          &.viridian
+            background: #2F825B
+        img
+          position: absolute
+          bottom: 15px
+
+
+#banner_container
+  text-align: center
+  background-image: image_url('service_hero_background.png')
+  background-repeat: no-repeat
+  background-color: #00A04A
+  background-position: 10% !important
+  padding: 50px 0 30px
+
+  #banner_container_inner
+    width: 0.8 * $site-width
+
+  h1
+    font-size: 2.375em
+
+  h2
+    font-weight: 600
+    font-size: 1.25em
+    margin: 40px 0
+
+  p
+    color: white
+
+
+
+#service_panel
+  +flexbox
+
+  #left_column, #right_column
+    +flex-grow(1)
+    +flex-shrink(0)
+    +flex(1)
+
+    input[type=text], input[type=password]
+      height: 70px
+      font-size: 1.25em
+  #right_column_inner
+    max-width: $site-width /3
+  #left_column_inner
+    max-width: $site-width /2
+  #left_column_inner, #right_column_inner
+    padding: 40px
+    h1
+      font-weight: 300
+      font-size: 2em
+      margin: 15px 0
+    h2
+      text-transform: uppercase
+      font-size: 1em
+      line-height: 1.25em
+      margin: 0
+
+  #left_column_inner
+    margin-left: auto
+  #right_column_inner
+    margin-right: auto
+
+  #left_column
+    color: rgba(black, 0.6)
+
+    p
+      font-weight: 500
+      line-height: 1.75em
+      font-size: 1.125em
+    a
+      padding: 20px 40px
+      background: #00A04A
+      border-radius: 50px
+      font-weight: 600
+      color: white
+      text-transform: uppercase
+      font-size: 1.25em
+      margin: 10px auto
+      display: block
+      width: 300px
+      text-align: center
+
+  #right_column
+    background: #E6E7E8
+    color: $primary_color
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+#how_panel
+  #how_panel_inner
+    max-width: $site-width
+    +flexbox
+    +justify-content(space-around)
+    margin: 50px auto
+
+    .how
+      text-align: center
+      line-height: 1.5em
+      color: rgba(black, 0.5)
+      width: 25%
+      margin: 30px
+
+      .image
+        width: 125px
+        height: 125px
+        border-radius: 100%
+        background: $grey
+        overflow: hidden
+        margin: 20px auto
+
+        img
+          width: 100%
+
+      .title
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 1.75em
+
+      .body
+        font-size: 0.875em
+        line-height: 1.25em
+
+
+
+
+
+#why_choose_panel
+  background: $light_primary_color
+  color: white
+  text-align: center
+  padding: 50px 0
+  font-size: 1.125em
+  #why_choose_panel_inner
+    max-width: $site-width - 200px
+    margin: 0 auto
+
+    h1
+      font-weight: 300
+      font-size: 2.5em
+    h2
+      text-transform: uppercase
+      font-size: 1em
+    p
+      line-height: 1.5em
+
+    a
+      margin: 40px 0
+      display: block

@@ -8,6 +8,10 @@
     font-weight: 300
     font-size: 2.5em
 
+#banner_container
+  p
+    color: rgba(white, 0.6)
+
 #blogs_container
   margin: 50px 0
   #blogs_container_inner
@@ -19,6 +23,20 @@
     .blog_teaser
       width: 33%
       margin: 40px 0
+
+#banner_container
+  padding: 75px
+  #banner_container_inner
+
+#blog_body
+  margin: 50px 0
+  color: rgba(black, 0.8)
+  line-height: 1.875em
+  #blog_body_inner
+    max-width: $site-width
+    margin: 0 auto
+
+
 
 #pagination_control
   background: $dark_grey
@@ -32,3 +50,8 @@
 
     span
       color: rgba(white, 0.75)
+      cursor: pointer
+      line-height: 2em
+
+      &:hover
+        border-bottom: 1px solid rgba(white, 0.75)

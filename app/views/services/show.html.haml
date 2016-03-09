@@ -4,70 +4,65 @@
 
 #banner_container
   #banner_container_inner
-    #banner_text
-      %h1 Car Showrooms
-      %p We clean lots and lots and lots of carshowromms in Noroflk, Surffolk and Essesx
+    %h1 Returning to Work Health Assessment
+    %h2 A return to work assessment involves a functional capacity evaluation of the individual to assess an individual's fitness to return to work
+    %p At Unity we advise you and your employee on the best `return to work` strategy, based on the individual's work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual's safe return.
 
-#main_panel
-  #main_panel_inner.columns
-    #left_content
-      %h3.emphasis With outstanding service, flexible terms and low rates - we know we can!
-      %p We would love to provide you with a quote for cleaning your business premises. Please call us on 01603 783800 (or 07790 306047) to arrange a good time for us to visit.
-      %p We will visit your place of work, discuss your cleaning requirements with you and then prepare a formal written quote for the services you require. All quotes are offered free and without obligation, and include a proper written schedule of agreed cleaning works for your approval.
-      %p
-        If you prefer a call back please tell us your name, phone number and a good time to call you by emailing
-        %span.emphais debra@execm.co.uk
-        or
-        %span.emphais paul@execm.co.uk
-      %p Thanks for visiting our web site, we hope to meet you soon.
-
-      .block
-        %p Car Showroom Cleaning Services
-        %ul
-          %li Daily or weekly offce cleaning
-          %li One-off 'deep cleans'
-          %li Carpets vacuumed
-          %li Work surfaces wiped/polished
-          %li Kitchen areas cleaned & disinfected
-          %li Toilets cleaned & disinfected
-          %li Equipment/furniture cleaned
-          %li All areas dusted & spot cleaned
-          %li Bins emptied & rubbish removed
-          %li Optional window cleaning
-          %li Optional consumables supply
-        %p We clean to a written schedule of works agreed in ad-vance with you that exactly fits your individual require-ments. You can pick and mix our services to match your needs.
-
-    #right_content
-      %br
-      %h1 We clean for...
-
-      .testimonial_container
-        .images_container
-          = image_tag 'car_icon.png'
-        .quote "We have found Executive Maintenance to be extremely ecient, trustworthy and co-operative. We would not hesitate in recommending them."
-        .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.
-      
-      .testimonial_container
-        .images_container
-          = image_tag 'car_icon.png'
-        .quote "We have found Executive Maintenance to be extremely ecient, trustworthy and co-operative. We would not hesitate in recommending them."
-        .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.
-      
-      .testimonial_container
-        .images_container
-          = image_tag 'car_icon.png'
-        .quote "We have found Executive Maintenance to be extremely ecient, trustworthy and co-operative. We would not hesitate in recommending them."
-        .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.
+#navigation_control
+  #navigation_control_inner
+    = link_to '< Another Service', '#'
+    = link_to 'Another Service >', '#'
 
 
 
 
-      .block.light.bottom
-        %h1 
-          %span.emphasis CAN WE QUOTE YOU HAPPY?
-          %br
-          CALL US ON
-          %span.emphasis 01603 783800
-          %br
-          OR
-          %span.emphasis SEND US A MESSAGE
+
+#service_panel
+  #left_column
+    #left_column_inner
+      %h1 Need a returning to work health assessment?
+      %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment.
+      %p We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
+      = link_to 'call us on 01603 250015', 'tel:01603250015'
+
+  #right_column
+    #right_column_inner
+      %p Or leave us a message below
+      = render 'enquiries/form'
+
+
+
+
+
+
+
+
+
+
+
+#how_panel
+  #how_panel_inner
+    .how
+      .image
+      .title Face to Face
+      .body Either your workers can come to our clinic to be assessed, or one of our highly trained physicians can come to you
+    .how
+      .image
+      .title physician led
+      .body Either your workers can come to our clinic to be assessed, or one of our highly trained physicians can come to you
+    .how
+      .image
+      .title high quality clinic
+      .body Either your workers can come to our clinic to be assessed, or one of our highly trained physicians can come to you
+    .how
+      .image
+      .title something else
+      .body Either your workers can come to our clinic to be assessed, or one of our highly trained physicians can come to you
+
+
+#why_choose_panel
+  #why_choose_panel_inner
+    %h1 Why choose Unity
+    %h2 protecting your most valuble assets
+    %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
+    = link_to 'Read More', '#'

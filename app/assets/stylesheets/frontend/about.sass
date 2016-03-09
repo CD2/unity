@@ -21,10 +21,6 @@
       font-size: 1em
     p
       line-height: 1.5em
-  img
-    width: 100%
-    position: absolute
-    bottom: 0
 
 #main_content_panel
   color: rgba(black, 0.6)
@@ -92,6 +88,8 @@
 
   #left_column, #right_column
     +flex-grow(1)
+    +flex-shrink(0)
+    +flex(1)
   #left_column_inner, #right_column_inner
     max-width: $site-width /2
     padding: 40px
