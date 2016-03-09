@@ -8,9 +8,9 @@
 
 #banner_container
   #banner_container_inner
-    %h1 Returning to Work Health Assessment
-    %h2 A return to work assessment involves a functional capacity evaluation of the individual to assess an individual's fitness to return to work
-    %p At Unity we advise you and your employee on the best `return to work` strategy, based on the individual's work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual's safe return.
+    %h1= @service.name
+    .body_text_intro
+      = raw @service.teaser_body
 
 #navigation_control
   #navigation_control_inner
