@@ -1,0 +1,72 @@
+#title_panel
+  background: $dark_primary_color
+  text-align: center
+  color: white
+  padding: 30px
+  font-size: 1.125em
+  #title_panel_inner
+    max-width: $site-width - 300px
+    margin: 0 auto
+    h1
+      font-weight: 300
+      font-size: 2.5em
+    h2
+      text-transform: uppercase
+      font-size: 1em
+      line-height: 2em
+    p
+      line-height: 1.5em
+
+    #action_container
+      +flexbox
+      a
+        +flex(1)
+        border-radius: 20px
+        padding: 20px 0
+        margin: 20px
+        text-align: center
+        cursor: pointer
+        border: 1px solid white
+
+#tabs_container
+  #tabs_head_container
+    max-width: 600px
+    margin: 70px auto 50px
+    +flexbox
+    label
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      -o-user-select: none
+      user-select: none
+      +flex(1)
+      border-top: 2px solid $light_grey
+      font-size: 1.25em
+      color: rgba(black, 0.5)
+      font-weight: 300
+      text-align: center
+      padding: 15px
+
+      &.active
+        border-top-color: $primary_color
+
+  >input[type=radio]
+    display: none
+
+  input[type=radio]:not(:checked) + .tab
+    display: none
+
+  .tab
+    max-width: $site-width - 100px
+    margin: 0 auto 50px
+
+    &#form_tab
+      background: $very_light_grey
+
+      #form_tab_inner
+        max-width: 600px
+        margin: 0 auto
+        padding: 50px
+
+    iframe 
+      width: 100%

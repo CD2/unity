@@ -1,9 +1,12 @@
 = form_for(Enquiry.new) do |f|
   .field
-    = f.text_field :name, placeholder: :name
+    = f.label :name
+    = f.text_field :name
   .field
-    = f.email_field :email, placeholder: :email
+    = f.label :email
+    = f.email_field :email
   .field
-    = f.text_area :body, placeholder: 'Your Message'
+    = f.label :body, 'Message'
+    = f.text_area :body
   .action
     = f.submit 'Send'

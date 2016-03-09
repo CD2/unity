@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 
+$(function(){
+  $('input[type="radio"][name="tab"]').on('change', function(e){
+    $('#tabs_head_container label').removeClass('active')
+    $('#tabs_head_container label[for="' + this.id + '"]').addClass('active')
+  });
+})

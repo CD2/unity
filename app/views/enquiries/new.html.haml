@@ -1,39 +1,26 @@
 - provide :title, 'Contact Us'
-- provide :body_class, 'contact_us narrow'
+- provide :body_class, 'contact_page'
 - provide :menu_item, '/contact_us'
 
 
-#banner_container
-  #banner_container_inner
-    #banner_text
-      %h1 About Us
-      %p We provide a professional cleaning service for offces and business premises in Norwich and Norfolk
+#title_panel
+  #title_panel_inner
+    %h1 Get in Touch
+    %h2 we’re commited to providing high quality, trustworth health and wellbeing
+    %p If you have any questions regarding anything on this site, need more information or are interested in talking to us about some of our services, please get in touch and we’ll be more than happy to help.
+    #action_container
+      = link_to 'mail@unitymedicalservices.com', 'mailto:mail@unitymedicalservices.com'
+      = link_to '01603 250059', 'tel:01603250059'
 
+#tabs_container
+  #tabs_head_container
+    = label_tag :tab_form, 'Send us a message', class: 'active'
+    = label_tag :tab_map, 'Where are we'
 
-#main_panel
-  #main_panel_inner.columns
-
-    #left_content
-      %h1.emphasis CAN WE QUOTE YOU HAPPY?
-      %p.emphasis With outstanding service, flexible terms and low rates - we know we can!
-      %p We would love to provide you with a quote for cleaning your business premises. Please call us on 01603 783800 (or 07790 306047) to arrange a good time for us to visit.
-      %p We will visit your place of work, discuss your cleaning re-quirements with you and then prepare a formal written quote for the services you require. All quotes are offered free and without obligation, and include a proper written schedule of agreed cleaning works for your approval.
-      %p 
-        If you prefer a call back please tell us your name, phone number and a good time to call you by emailing 
-        %span.emphasis debra@execm.co.uk
-        or
-        %span.emphasis paul@execm.co.uk
-      %p Thanks for visiting our web site, we hope to meet you soon.
-
-    #right_content
-      %h1 Send us a message
-
-      = render 'common/form_errors', object: @enquiry
-
+  = radio_button_tag :tab, 'form', {checked:1}
+  .tab#form_tab
+    #form_tab_inner
       = render 'form'
-
-
-#testimonial_panel
-  #testimonial_panel_inner.testimonial_container
-    .quote "We have found Executive Maintenance to be extremely efficient, trustworthy and co-operative. We would not hesitate in recommending them."
-    .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.
+  = radio_button_tag :tab, 'map'
+  .tab#map_tab
+    %iframe{src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.1882664120535!2d1.2419835012702807!3d52.63851158439784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9e11bf4bacf63%3A0x4aee80d84a89a82c!2s552+Dereham+Rd%2C+Norwich%2C+Norfolk+NR5+8TU%2C+UK!5e0!3m2!1sen!2s!4v1457502041501", width: "600", height: "450", frameborder: "0", style: "border:0", allowfullscreen: 1}
