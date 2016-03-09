@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160304201351) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "blocks", force: :cascade do |t|
     t.string   "name"
     t.string   "machine_name"
@@ -22,6 +25,13 @@ ActiveRecord::Schema.define(version: 20160304201351) do
     t.string   "specialised_block_type"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "blogs", force: :cascade do |t|
+    t.string   "name"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "enquiries", force: :cascade do |t|
@@ -45,13 +55,6 @@ ActiveRecord::Schema.define(version: 20160304201351) do
     t.string   "name"
     t.text     "body"
     t.string   "banner"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "stories", force: :cascade do |t|
-    t.string   "name"
-    t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
