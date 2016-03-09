@@ -1,5 +1,7 @@
 class Blog < ActiveRecord::Base
 
+  mount_uploader :banner, ImageUploader
+
   after_destroy -> { Tag.cleanup }
 
 	mount_uploader :banner, ImageUploader

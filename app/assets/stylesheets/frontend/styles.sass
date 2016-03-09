@@ -15,3 +15,55 @@ body.blog_page
 
 body.contact_page
   @import contact
+
+
+#banner_container
+  color: white
+  font-weight: 700
+  background: $primary_color
+  padding-top: 40px
+  position: relative
+
+  #banner_container_inner
+    max-width: $site-width
+    margin: 0 auto
+    padding: 20px 20px 50px
+    box-sizing: border-box
+    position: relative
+
+    >h1
+      font-weight: 300
+      margin: 0
+    >p
+      font-size: 1.125em
+      width: 80%
+      margin: 10px 0
+      font-weight: 500
+      color: rgba(white, 0.7)
+
+    #banner_content
+      width: 65%
+      padding-top: 20px
+
+      h1
+
+      p
+        text-transform: uppercase
+        line-height: 1.5em
+        font-size: 1.125em
+        width: 80%
+        margin: 20px 0
+
+  #image_container
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 50%
+
+    img
+      display: block
+      margin-left: auto
+      width: 100%
+
+      &:first-child
+        width: 60%
