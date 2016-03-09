@@ -1,4 +1,4 @@
-task :gen_blogs do
+task gen_blogs: :environment do
 
     Service.create!(
       name: 'Returning to Work',
