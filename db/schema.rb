@@ -54,10 +54,12 @@ ActiveRecord::Schema.define(version: 20160304201351) do
 
   create_table "services", force: :cascade do |t|
     t.string   "name"
+    t.text     "teaser_body"
+    t.string   "teaser_image"
     t.text     "body"
-    t.string   "banner"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "color"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

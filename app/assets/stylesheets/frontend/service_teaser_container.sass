@@ -1,0 +1,58 @@
+#service_teaser_container
+  #service_teaser_container_inner
+    width: $site-width
+    margin: 0 auto
+    +flexbox
+    +flex-wrap(wrap)
+   
+
+    .service_teaser
+      position: relative
+      width: 50%
+      height: 320px
+      padding: 30px 40px
+      box-sizing: border-box
+      background: #E8E8E9
+
+      &:nth-child(4n-2), &:nth-child(4n-1)
+        background: #F0F1F1
+
+      &:nth-child(2n)
+        text-align: right
+        .service_teaser_inner
+          margin-left: auto
+        img
+          left: 15px
+
+
+      .service_teaser_inner
+        width: 80%
+
+        h1
+          margin: 0
+          color: $primary_color
+          font-size: 1.75em
+        p
+          font-weight: 300
+          line-height: 1.875em
+          margin: 25px 0
+          color: rgba(black, 0.8)
+
+        a
+          text-align: center
+          display: inline-block
+          width: 150px
+          height: 45px
+          line-height: 45px
+          border-radius: 22.5px
+          color: white
+          z-index: 2
+          position: relative
+          font-weight: 900
+          text-transform: uppercase
+          font-size: 0.875em
+
+        img
+          position: absolute
+          bottom: 15px
+          right: 15px

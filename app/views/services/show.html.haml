@@ -1,6 +1,10 @@
-- provide :title, 'Services'
+- provide :title, "#{@service.name} | Service"
 - provide :body_class, 'service_page'
 - provide :menu_item, '/services'
+
+:sass
+  #banner_container
+    background-color: #{@service.color}
 
 #banner_container
   #banner_container_inner
@@ -20,10 +24,8 @@
 #service_panel
   #left_column
     #left_column_inner
-      %h1 Need a returning to work health assessment?
-      %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment.
-      %p We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
-      = link_to 'call us on 01603 250015', 'tel:01603250015'
+      = raw @service.body
+      = link_to 'call us on 01603 250015', 'tel:01603250015', style: "background: #{@service.color}"
 
   #right_column
     #right_column_inner

@@ -7,60 +7,11 @@
 
 #service_teaser_container
   #service_teaser_container_inner
-    #left_column
-      .service_teaser
-        .service_teaser_inner
-          %h1 Sickness and Absence
-          %p At Unity we provide a confidential and supportive assessment of an individual’s ill health.
-          = link_to 'Learn More', service_path(1), class: 'blue'
-          = image_tag 'service_person_2.png'
 
+    - @services.each do |service|
       .service_teaser
         .service_teaser_inner
-          %h1 Ill Health & Retirement
-          %p When an employee has been unfit for work for some time with a prognosis of permenant illness, we can assess the employees health and recommend how you proceed.
-          = link_to 'Learn More', service_path(3), class: 'purple'
-          = image_tag 'service_person_4.png'
-
-      .service_teaser
-        .service_teaser_inner
-          %h1 Executive Pre-Placement Health Assessment
-          %p At Unity we provide a confidential and supportive assessment of an individual’s ill health.
-          = link_to 'Learn More', service_path(5), class: 'pink'
-          = image_tag 'service_person_6.png'
-
-      .service_teaser
-        .service_teaser_inner
-          %h1 Wellbeing Services
-          %p At Unity we provide a confidential and supportive assessment of an individual’s ill health.
-          = link_to 'Learn More', service_path(7), class: 'keppel'
-          = image_tag 'service_person_8.png'
-
-    #right_column
-      .service_teaser
-        .service_teaser_inner
-          %h1 Returning to Work
-          %p A Return to Work Assessment involves a functional capacity evaluation of he individual to assess an individual’s fitness to return to work.
-          = link_to 'Learn More', service_path(2), class: 'green'
-          = image_tag 'service_person_1.png'
-
-      .service_teaser
-        .service_teaser_inner
-          %h1 Pre-Placement Health Assessment
-          %p A pre-placement assessment on the health status of a new employee is key to ensuring an individual is fit for the job they are about to undertake.
-          = link_to 'Learn More', service_path(4), class: 'red'
-          = image_tag 'service_person_3.png'
-
-      .service_teaser
-        .service_teaser_inner
-          %h1 Workplace Risk Assessments
-          %p A Return to Work Assessment involves a functional capacity evaluation of he individual to assess an individual’s fitness to return to work.
-          = link_to 'Learn More', service_path(6), class: 'duke'
-          = image_tag 'service_person_5.png'
-
-      .service_teaser
-        .service_teaser_inner
-          %h1 Health Surveillance
-          %p A Return to Work Assessment involves a functional capacity evaluation of he individual to assess an individual’s fitness to return to work.
-          = link_to 'Learn More', service_path(8), class: 'viridian'
-          = image_tag 'service_person_7.png'
+          %h1= service.name
+          %p= service.teaser_body
+          = link_to 'Learn More', service_path(service), {style: "background:#{service.color}"}
+          = image_tag service.teaser_image
