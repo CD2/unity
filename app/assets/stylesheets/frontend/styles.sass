@@ -1,0 +1,238 @@
+@import header
+@import footer
+@import forms
+
+
+#banner_container
+  color: white
+  font-weight: 700
+  background: $primary_color
+  padding-top: 40px
+  position: relative
+
+  &:before
+    content: ''
+    background: image_url('home_banner_curve.png')
+    display: block
+    height: 40px
+    width: 100%
+    top: 5px
+    background-size: cover
+    position: absolute
+    z-index: 2
+
+  &:after
+    content: ''
+    display: block
+    height: 40px
+    background: #DFDFDF
+    border-bottom: 5px solid white
+    width: 100%
+    position: absolute
+    top: 0
+
+  #banner_container_inner
+    max-width: $site-width
+    margin: 0 auto
+    padding: 20px 20px 50px
+    box-sizing: border-box
+    position: relative
+
+    #banner_content
+      width: 65%
+      padding-top: 20px
+
+      h1
+        margin: 0
+      p
+        text-transform: uppercase
+        line-height: 1.5em
+        font-size: 1.125em
+        width: 80%
+        margin: 20px 0
+
+      .action
+        text-transform: uppercase
+        background: white
+        color: $primary_color
+        padding: 15px 30px
+        border-radius: 10px
+        display: inline-block
+        cursor: pointer
+
+  #image_container
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 50%
+
+    img
+      display: block
+      margin-left: auto
+      width: 100%
+
+      &:first-child
+        width: 60%
+
+#service_overview_container
+  #service_overview_container_inner
+    width: $site-width - 150px
+    margin: 0 auto
+    padding: 50px 10px 30px
+    text-align: center
+    font-weight: 300
+
+    h1
+      color: $primary_color
+      text-transform: uppercase
+
+    p
+      color: rgba(black, 0.5)
+      line-height: 1.75em
+
+    a
+      color: $primary_color
+      line-height: 75px
+
+#service_teaser_container
+  #service_teaser_container_inner
+    width: $site-width
+    margin: 0 auto
+
+    #left_column, #right_column
+      width: 50%
+      display: inline-block
+
+    #left_column
+      .service_teaser
+        background: #E8E8E9
+        &:nth-child(even)
+          background: #F0F1F1
+        img
+          right: 20px
+
+    #right_column
+      float: right
+      
+      .service_teaser
+        .service_teaser_inner
+          margin-left: auto
+        background: #F0F1F1
+        text-align: right
+        &:nth-child(even)
+          background: #E8E8E9
+
+        img
+          left: 20px
+
+    .service_teaser
+      position: relative
+      width: 100%
+      height: 320px
+      padding: 30px 40px
+      box-sizing: border-box
+      .service_teaser_inner
+        width: 80%
+
+        h1
+          margin: 0
+          color: $primary_color
+          font-size: 1.75em
+        p
+          font-weight: 300
+          line-height: 1.875em
+          margin: 25px 0
+          color: rgba(black, 0.8)
+
+        a
+          text-align: center
+          display: inline-block
+          width: 150px
+          height: 45px
+          line-height: 45px
+          border-radius: 22.5px
+          color: white
+          z-index: 2
+          position: relative
+          font-weight: 900
+          text-transform: uppercase
+          font-size: 0.875em
+
+          &.blue
+            background: #458CC4
+          &.purple
+            background: #9360A7
+          &.pink
+            background: #EC5090
+          &.keppel
+            background: #2FB9ED
+          &.green
+            background: #2FAF6A
+          &.red
+            background: #ED635A
+          &.duke
+            background: #4862AA
+          &.viridian
+            background: #2F825B
+        img
+          position: absolute
+          bottom: 15px
+
+
+#blog_teasers_container
+  margin: 100px 0 200px
+
+  #blog_teasers_container_inner
+    max-width: $site-width
+    margin: 0 auto
+    +flexbox
+    .blog_teaser
+      position: relative
+
+      &:nth-child(1)
+        background: #E3E3E3
+      &:nth-child(2)
+        background: #EAEAEA
+      &:nth-child(3)
+        background: #EFEFEF
+      img
+        width: 100%
+
+      .blog_teaser_content
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 70px
+        h1
+          color: $primary_color
+          font-weight: 300
+          font-size: 1.5em
+          line-height: 1.5em
+          margin: 30px 0 10px
+
+        .date
+          color: rgba(black, 0.5)
+          font-weight: 300
+
+      a
+        position: absolute
+        bottom: 0
+        right: 0
+        font-weight: 800
+        color: white
+        z-index: 2
+        line-height: 40px
+        text-align: center
+        width: 40px
+
+        &:before
+          content: ''
+          display: block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 0 70px 70px
+          border-color: transparent transparent $primary_color transparent
+          position: absolute
+          bottom: 0
+          right: 0
+          z-index: -1

@@ -1,0 +1,11 @@
+#home_form.tabs_container
+	.tab_head_container
+		%label.tab_head.selected{for: 'tab_1'} Leave your number
+		%label.tab_head{for: 'tab_2'} Get in touch
+	%input#tab_1{type: 'radio', name: 'tab_control_group', checked: true}
+	.tab_container
+		%p Leave your number below and we’ll give you a call about our cleaning services. Any quotes we give are honest and no obligation.
+		= render 'common/leave_number_form'
+	%input#tab_2{type: 'radio', name: 'tab_control_group'}
+	.tab_container
+		= render 'enquiries/form'

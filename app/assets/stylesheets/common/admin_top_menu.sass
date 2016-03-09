@@ -1,0 +1,18 @@
+#admin_top_menu
+  +flexbox
+  background: $dark_grey
+  color: white
+
+  .spacer
+    +flex-grow(1)
+
+  a
+    display: block
+    background: $grey
+    padding: 5px 10px
+
+    &+a
+      margin-left: 3px
+
+    &.delete
+      background: $red

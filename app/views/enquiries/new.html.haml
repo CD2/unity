@@ -1,0 +1,39 @@
+- provide :title, 'Contact Us'
+- provide :body_class, 'contact_us narrow'
+- provide :menu_item, '/contact_us'
+
+
+#banner_container
+  #banner_container_inner
+    #banner_text
+      %h1 About Us
+      %p We provide a professional cleaning service for offces and business premises in Norwich and Norfolk
+
+
+#main_panel
+  #main_panel_inner.columns
+
+    #left_content
+      %h1.emphasis CAN WE QUOTE YOU HAPPY?
+      %p.emphasis With outstanding service, flexible terms and low rates - we know we can!
+      %p We would love to provide you with a quote for cleaning your business premises. Please call us on 01603 783800 (or 07790 306047) to arrange a good time for us to visit.
+      %p We will visit your place of work, discuss your cleaning re-quirements with you and then prepare a formal written quote for the services you require. All quotes are offered free and without obligation, and include a proper written schedule of agreed cleaning works for your approval.
+      %p 
+        If you prefer a call back please tell us your name, phone number and a good time to call you by emailing 
+        %span.emphasis debra@execm.co.uk
+        or
+        %span.emphasis paul@execm.co.uk
+      %p Thanks for visiting our web site, we hope to meet you soon.
+
+    #right_content
+      %h1 Send us a message
+
+      = render 'common/form_errors', object: @enquiry
+
+      = render 'form'
+
+
+#testimonial_panel
+  #testimonial_panel_inner.testimonial_container
+    .quote "We have found Executive Maintenance to be extremely efficient, trustworthy and co-operative. We would not hesitate in recommending them."
+    .author -V A Lerski, Director, International School of Aerospace NDT Ltd, Norwich.

@@ -1,0 +1,24 @@
+- provide :title, "#{@resource_name.humanize}"
+- provide :heading, @resource_name.humanize
+- provide :page_actions, index_actions
+
+%table
+  %tr
+    - @index_columns.each do |_, column_title|
+      %th= column_title
+    %th.actions_column{colspan: (@index_show_view ? 3 : 2)}
+
+  - @resources.each do |resource|
+    %tr
+      - @index_columns.each do |column_name, column_title, display_block|
+        - if display_block
+          %td= display_block.call(resource[column_name], resource)
+        - else
+          %td= resource[column_name]
+      - if @index_show_view
+        - view_path = if @index_show_view == true then [resource] else @index_show_view.call(resource) end
+        %td.action.view= link_to 'View', view_path
+      - begin
+        %td.action.edit= link_to 'Edit', [:edit, :admin, resource]
+      - rescue
+      %td.action.delete= link_to 'Delete', [:admin, resource], method: 'delete', data: {confirm: "Are you sure you want to delete this #{@resource_name}?"}

@@ -1,0 +1,17 @@
+@import 'tables'
+@import 'sidebar'
+@import 'header'
+@import 'notices'
+@import 'pages_form'
+
+&
+  +flexbox
+  height: 100vh
+
+#admin_page_container
+  +flex-grow(1)
+
+  #admin_content_inner
+    max-width: $admin_site_width
+    margin: 0 auto
+    padding: 0 10px

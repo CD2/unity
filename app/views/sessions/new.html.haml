@@ -1,0 +1,18 @@
+- provide :title, 'Login'
+- provide :body_class, 'login_page'
+#login_panel
+  #login_panel_inner
+    
+    %h1 Login
+    = form_for(:session, url: login_path) do |f|
+
+      .field
+        = f.email_field :email, placeholder: :email
+      .field
+        = f.password_field :password, placeholder: :password
+      .field
+        = f.label :remember_me, 'Remember me?' do
+          = f.check_box :remember_me
+          %span Remember me on this device
+      .actions
+        = f.submit 'login'

@@ -1,0 +1,8 @@
+= form_for(Enquiry.new) do |f|
+  = hidden_field_tag :phone_form
+  .field
+    = f.text_field :name, placeholder: :name
+  .field
+    = f.telephone_field :phone, placeholder: :phone
+  .action
+    = f.submit 'Send'

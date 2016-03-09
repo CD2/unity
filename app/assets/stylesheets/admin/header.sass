@@ -1,0 +1,35 @@
+#header
+
+  #header_inner
+    max-width: $admin_site_width
+    margin: 0 auto 
+    +flexbox
+    +align-items(center)
+    border-bottom: 3px solid $very_light_grey
+    margin-bottom: 20px
+    border-top: 50px solid $very_light_grey
+    padding: 0 40px
+
+    #page_actions
+      +flexbox
+      a
+        background: $primary_color
+        height: 50px
+        width: 150px
+        line-height: 50px
+        text-align: center
+        margin: 10px
+        color: rgba(white, 0.9)
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+
+        &:hover
+          text-decoration: none
+
+        &:hover
+          color: white
+
+    h1 
+      +flex-grow(1)
+      font-weight: normal
+      font-size: 1.5em
+      color: rgba(0,0,0,0.75)

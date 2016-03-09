@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title= page_title yield :title
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body.admin_page{:class => yield(:body_class)}
+
+    = render 'common/admin_sidebar'
+
+    #admin_page_container
+
+      #header
+        #header_inner
+          %h1= yield :heading
+          #page_actions
+            = yield :page_actions
+      
+      #notices
+        #notices_inner
+          - flash.each do |key, value|
+            .flash{class: key}= value
+
+      #admin_content
+        #admin_content_inner
+          = yield

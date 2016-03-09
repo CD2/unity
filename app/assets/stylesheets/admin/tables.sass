@@ -1,0 +1,38 @@
+table
+  width: 100%
+  background: white
+  border: 1px solid $light_grey
+  border-top: 8px solid $dark_primary_color
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+
+  tr
+    height: 70px
+
+    &+tr
+      border-top: 1px solid $light_grey
+
+    &:first-child
+      background: $very_light_grey
+
+  th
+    font-size:  1.2em
+
+  td, th
+    padding: 10px 15px
+    text-align: left
+
+  .action
+    color: $light_primary_color
+    text-align: center
+    border-left: 1px solid $light_grey
+    width: 75px
+
+    &.delete
+      background: $red
+      color: white
+      border-left: none
+
+      &:hover
+        background: $light_red
+
+

@@ -1,0 +1,19 @@
+- provide :body_class, 'pages_form'
+
+= form_for [:admin, @page] do |f|
+  .field
+    = f.label :title
+    = f.text_field :title
+
+  .field
+    = f.label :path
+    = f.text_field :path
+
+  = f.fields_for :blocks do |bf|
+    - @page.blocks.each do |block|
+      .field
+      %fieldset
+        %legend= block.name
+        = block.render_edit bf
+  .action
+    = f.submit 'Save'

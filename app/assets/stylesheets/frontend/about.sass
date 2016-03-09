@@ -1,0 +1,65 @@
+#introduction_panel
+  margin: 50px 0 20px
+  
+  #introduction_panel_inner
+    max-width: $site_width
+    margin: 0 auto
+    text-align: center
+
+    h1
+      color: $light_primary_color
+      font-weight: normal
+
+    p
+      max-width: 700px
+      margin: 0 auto
+      color: rgba(0, 0, 0, 0.5)
+      line-height: 1.5em
+
+#people_container
+  +flexbox
+  +flex-wrap(wrap)
+  margin-top: 30px
+
+  .person
+    color: $primary_color
+    text-align: center
+    margin: 15px 20px 20px
+    text-transform: uppercase
+    line-height: 1em
+
+    .image_container
+      border-radius: 100%
+      background: $grey
+      width: 125px
+      height: 125px
+      margin-bottom: 15px
+
+      img
+        width: inherit
+        height: inherit
+
+    .name
+      font-weight: bold
+      margin: 0
+
+    .position
+      font-style: italic
+      font-size: 0.875em
+
+
+
+
+#call_to_action_panel
+  background: $light_primary_color
+  height: 250px
+  +flexbox
+  +align-items(center)
+
+  #call_to_action_panel_inner
+    max-width: $site_width
+    margin: 0 auto
+    font-size: 1.75em
+    text-align: center
+    color: white
+    text-transform: uppercase
