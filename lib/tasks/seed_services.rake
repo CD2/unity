@@ -2,9 +2,9 @@ task gen_blogs: :environment do
 
     Service.create!(
       name: 'Sickness and Absence',
+      teaser_image: File.open(Rails.root.join('seed_images', 'service_person_2.png')),
       teaser_body: '<p>At Unity we provide a confidential and supportive assessment of an individual’s ill health.</p><p>This information includes potential length of absence from work, any recommended safeguards or adjustments and whether a period of staged return or rehabilitation is required.
 </p>',
-      teaser_image: File.open(Rails.root.join('seed_images', 'service_person_2.png')),
       body: '<h1>Need help with Sickness and Absence?</h1><p>At Unity we advise you and your employee on the best way to manage their sickness absence, whether it is either long-term or frequent, and provide strategies to assist either their return to work or to enable them to continue at work. This can be achieved through a review of the individual’s work activities and environment in relation to their health condition. We will also advise you on how best to manage these workers within the workplace in terms of suggested reasonable adjustments to be considered if reasonably practicable within the business.</p>',
       color: '#458CC4')
     
