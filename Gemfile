@@ -18,7 +18,8 @@ gem 'fog'
 gem 'faker'
 gem 'figaro'
 gem 'whenever', :require => false
-gem "figaro"
+gem 'ckeditor'
+gem 'will_paginate'
 
 
 group :production do

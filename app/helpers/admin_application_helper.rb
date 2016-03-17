@@ -7,7 +7,7 @@ module AdminApplicationHelper
       when :string
         'text_field'
       when :text
-        'text_area'
+        'cktext_area'
       when :boolean
         'check_box'
       end

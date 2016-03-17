@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require ckeditor/init
 
 $(function(){
   $('input[type="radio"][name="tab"]').on('change', function(e){

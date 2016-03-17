@@ -2,8 +2,9 @@ table
   width: 100%
   background: white
   border: 1px solid $light_grey
-  border-top: 8px solid $dark_primary_color
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+  &:not(.list)
+    border-top: 8px solid $dark_primary_color
 
   tr
     height: 70px
@@ -11,7 +12,8 @@ table
     &+tr
       border-top: 1px solid $light_grey
 
-    &:first-child
+  &:not(.list)
+    tr:first-child
       background: $very_light_grey
 
   th
@@ -36,3 +38,7 @@ table
         background: $light_red
 
 
+table.list
+  td:first-child
+    background: $primary_color
+    color: white

@@ -76,13 +76,19 @@ body.service_page
     max-width: $site-width
     margin: 0 auto
     position: relative
+    color: rgba(white, 0.75)
+
+    .pagination
+      text-align: center
+
+      &>*
+        padding: 5px
+
+        &:first-child, &:last-child
+          padding: 25px
     a
-      color: rgba(white, 0.75)
       cursor: pointer
       line-height: 2em
-
-    a:nth-child(2)
-      float: right
 
 #title_panel
   background: $dark_primary_color

@@ -1,0 +1,8 @@
+- provide :title, "#{@resource_name.humanize}"
+- provide :heading, @resource_name.humanize
+
+%table.list
+  - @resource_fields.each do |rf|
+    %tr
+      %td= rf.name
+      %td= @resource[rf.column_name]

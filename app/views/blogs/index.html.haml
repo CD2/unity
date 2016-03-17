@@ -7,43 +7,14 @@
 
 #blogs_container
   #blogs_container_inner
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
+    - @blogs.each do |blog|
+      .blog_teaser
+        = image_tag blog.banner
+        .blog_teaser_content
+          %h1= blog.name
+          .date= blog.updated_at.strftime("%B %Y")
+        = link_to '>', blog
 
 #navigation_control
   #navigation_control_inner
-    = link_to '< Older', '#'
+    = will_paginate @blogs, :previous_label => 'Older', :next_label => 'Newer'

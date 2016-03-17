@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   root 'pages#show'
 
   get 'login' =>  'sessions#new'
@@ -19,10 +20,7 @@ Rails.application.routes.draw do
 
     resources :services, except: [:show]
     resources :blogs, except: [:show]
-    resources :settings, except: [:show]
-    resources :menus, except: [:show]
     resources :pages, except: [:show]
-    resources :testimonials, except: [:show]
     resources :enquiries, only: [:index, :show, :destroy]
     resources :users, except: [:show]
   end

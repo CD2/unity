@@ -35,21 +35,10 @@
 
 #blog_teasers_container
   #blog_teasers_container_inner
-    .blog_teaser
-      = image_tag 'blog_holder_3.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder_2.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
-    .blog_teaser
-      = image_tag 'blog_holder.png'
-      .blog_teaser_content
-        %h1 UNITY launches new thing and puts a news article about it
-        .date January 2016
-      = link_to '>', blog_path(1)
+    - Blog.last(3).each do |blog|
+      .blog_teaser
+        = image_tag blog.banner
+        .blog_teaser_content
+          %h1= blog.name
+          .date= blog.updated_at.strftime("%B %Y")
+        = link_to '>', blog
