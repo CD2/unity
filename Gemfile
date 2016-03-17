@@ -14,9 +14,12 @@ gem "jquery-ui-rails"
 gem 'rack-rewrite'
 gem 'modernizr-rails'
 gem 'bcrypt'
+gem 'fog'
 gem 'faker'
 gem 'figaro'
 gem 'whenever', :require => false
+gem "figaro"
+
 
 group :production do
   gem 'unicorn'

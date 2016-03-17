@@ -12,6 +12,6 @@
       .service_teaser
         .service_teaser_inner
           %h1= service.name
-          %p= service.teaser_body
+          %p= truncate(service.teaser_body, length: 140, escape: false)
           = link_to 'Learn More', service_path(service), {style: "background:#{service.color}"}
           = image_tag service.teaser_image
