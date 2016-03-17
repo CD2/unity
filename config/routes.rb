@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     resources :services, except: [:show]
     resources :blogs, except: [:show]
     resources :pages, except: [:show]
+    resources :teams, except: [:show]
     resources :enquiries, only: [:index, :show, :destroy]
     resources :users, except: [:show]
   end

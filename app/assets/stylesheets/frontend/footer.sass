@@ -11,7 +11,7 @@
     font-size: 1rem
     margin-top: -1px
     #contact_info
-      padding: 0 10px 10px
+      padding: 0 25px 10px
       padding-top: 20px
       background: #e5e2ff
       min-height: 140px
@@ -30,13 +30,15 @@
         color: $light_primary_color
         font-weight: 700
         text-decoration: underline
+        text-wrap: nowrap
 
     #footer_logo_container
       max-width: $site-width
       position: relative
-      margin: 0 20px
+      margin: 0 auto
+      padding: 0 20px
 
-      @media screen and (max-width: 700px)
+      @media screen and (max-width: 750px)
         +flexbox
         +justify-content(space-around)
       @media screen and (max-width: 490px)
@@ -46,10 +48,10 @@
       img
         height: 60px
         margin: 30px 0
-      @media screen and (min-width: 701px)
+      @media screen and (min-width: 751px)
         img:nth-child(2)
           position: absolute
-          right: 0
+          right: 20px
 
     #copyright
       background: $primary_color

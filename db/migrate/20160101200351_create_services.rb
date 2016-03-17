@@ -4,6 +4,7 @@ class CreateServices < ActiveRecord::Migration
       t.string :name
       t.text :teaser_body
       t.string :teaser_image
+      t.text :header
       t.text :body
       t.string :color
 

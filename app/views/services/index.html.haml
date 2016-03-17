@@ -5,13 +5,4 @@
 #title_panel
   %h1 Our Services
 
-#service_teaser_container
-  #service_teaser_container_inner
-
-    - @services.each do |service|
-      .service_teaser
-        .service_teaser_inner
-          %h1= service.name
-          %p= truncate(service.teaser_body, length: 140, escape: false)
-          = link_to 'Learn More', service_path(service), {style: "background:#{service.color}"}
-          = image_tag service.teaser_image
+= render 'common/service_teasers'

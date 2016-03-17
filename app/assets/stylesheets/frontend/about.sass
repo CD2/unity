@@ -41,17 +41,16 @@
 
 #our_people_panel
   background: $very_light_grey
-  min-height: 500px
-  text-align: center
   color: rgba(black, 0.6)
   padding: 50px
 
   #our_people_panel_inner
-    max-width: $site-width
+    max-width: $site-width - 500px
     margin: 0 auto
     height: 100%
 
     h1
+      text-align: center
       font-weight: 300
       font-size: 2.125em
 
@@ -63,26 +62,37 @@
       margin: 50px auto
 
       .person
-        text-align: center
-        line-height: 1.5em
-        color: rgba(black, 0.5)
-        .image
-          width: 125px
-          height: 125px
+        margin: 30px 0
+        +flexbox
+        +align-items(flex-start)
+        .circle
+          width: 75px
+          height: 75px
           border-radius: 100%
-          background: $grey
           overflow: hidden
           margin: 30px
+          +flex-shrink(0)
 
-          img
-            width: 100%
+        @media screen and (max-width: 550px)
+          text-align: center
+          .circle
+            display: none
 
         .name
           font-weight: 700
-          text-transform: uppercase
+          display: inline-block
 
-        .title
+        .position
+          font-weight: 700
           font-size: 0.875em
+          text-transform: uppercase
+          display: inline-block
+          margin-bottom: 20px
+
+          &:before
+            content: ' - '
+          .body
+            font-size: 0.875em
 
 
 #blue_dots_panel

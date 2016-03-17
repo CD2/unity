@@ -7,41 +7,24 @@
   #introduction_panel_inner
     %h1 Who are Unity
     %h2 Protecting your most valuble assets
-    %p At Unity we advise you and your employee on the best ‘return to work’ strategy, based on the individual’s work activities and environment. We can also advise you on how to safely adapt the workplace, in so far as is reasonably practicable, to accommodate an individual’s safe return.
+    %p Unity prides itself on listening to clients needs not just providing one service to all clients, we work with clients old and new in designing services to meet the needs of the organisation and the employees. We do not believe that any service stands still and provide regular reviews and enhancements in liaison with the client to increase the benefit to the employer and employee.
 
 #main_content_panel
   #main_content_panel_inner
-    %h1 Physician Led Occupational Health and Wellbeing Services
-    %p The cost of work related ill health to your business can be significant and far reaching; in addition to sick pay, there is also the cost of temporary cover and extra supervision, as well as reduced productivity and potential legal and compensation claims.
-
-    %p Unity can assist in keeping your employees fit, healthy and working. By identifying health hazards in your organisation and ensuring employees are fit for the job they are doing, you can reduce sickness absence and promote a positive work culture.
-
-    %p Early management of sickness absence can also identify adjustments, restrictions and considerations to promote well-being and facilitate an earlier return to work.
+    %h1 360⁰ Service encompassing Occupational Health Physicians, Occupational Health Nurse Advisors and Associate Professionals providing a comprehensive Occupational Health and Wellbeing Services
+    %p Unity Occupational Health and Wellbeing has been established for over forty years and boasts wide ranging experience in Occupational Health and Safety, operating throughout the UK from its Norwich headquarters.
+    %p Unity is recognised by the Health & Safety Executive and has Appointed Specialist Doctors under Government Legislative Requirements for lead, asbestos and diving. We also provide offshore medicals and Level 4 Hand Arm Vibration Syndrome Screening.
+    %p Our staff are fully trained and experienced in the field of Occupational Health and are dedicated to the maintenance and promotion of health in the workplace.
+    %p Unity provides a wide range of occupational health and private medical services to both large and small organisations, which can be individually tailored to suit the requirements of the client.
+    %p Unity has a wide client base in terms of location and industry. We operate throughout the UK, and have worked with clients in a diverse range of business sectors including offices, workshops, food, industrial and manufacturing plants.
 
 #our_people_panel
   #our_people_panel_inner
     %h1 Our Team
 
     #people_container
-      .person
-        .image
-        .name Person Surename
-        .title Job Title
-
-      .person
-        .image
-        .name Person Surename
-        .title Job Title
-
-      .person
-        .image
-        .name Person Surename
-        .title Job Title
-
-      .person
-        .image
-        .name Person Surename
-        .title Job Title
+      - Team.all.each do |person|
+        = render 'common/person', person: person
 
 #blue_dots_panel
   #left_column
@@ -50,6 +33,6 @@
   #right_column
     #right_column_inner
       %h1 Looking for more information
-      %h2 we’re commited to providing high quality, trustworth health and wellbeing
+      %h2 we’re committed to providing high quality, trustworthy health and wellbeing
       %p If you have any questions regarding anything on this site, need more information or are interested in talking to us about some of our services, please get in touch and we’ll be more than happy to help.
-      = link_to '01603 250059', 'tel:01603250059', class: 'action'
+      = link_to '01603 250015', 'tel:01603250015', class: 'action'

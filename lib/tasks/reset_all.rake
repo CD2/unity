@@ -6,6 +6,7 @@ task :reset_all do
   Rake::Task['gen_users'].invoke
   Rake::Task['gen_pages'].invoke
   Rake::Task['gen_blogs'].invoke
+  Rake::Task['gen_teams'].invoke
   
 
 end

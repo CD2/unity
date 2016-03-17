@@ -5,7 +5,7 @@
   font-size: 0.875em
   padding: 20px
 
-  @media screen and (max-width: 900px)
+  @media screen and (max-width: 910px)
     padding: 10px
   @media screen and (max-width: 400px)
     padding: 5px
@@ -13,25 +13,28 @@
   #header_container_inner
     max-width: $site_width
     margin: 0 auto
+    position: relative
     +flexbox
     +justify-content(space-between)
 
-    @media screen and (max-width: 670px)
+    @media screen and (max-width: 911px) and (min-width: 726px)
+      padding-right: 75px
+
+    @media screen and (max-width: 725px)
       +flex-wrap(wrap)
 
     @media screen and (max-width: 400px)
       +flex-direction(column)
       +align-items(center)
 
-      #logo
-        +order(2)
-        
+      #logo        
+        padding-right: 75px
         img
           max-width: 100%
 
 
     #logo img
-      margin: 10px 0 0
+      margin-top: 10px
 
     #slide_menu_button
       float: right
@@ -40,37 +43,34 @@
       padding: 5px 10px
       cursor: pointer
       border: 1px solid $primary_color
-      +align-self(center)
-      @media screen and (min-width: 670px)
-        +order(3)
-      @media screen and (max-width: 400px)
-        +align-self(flex-end)
-        margin-top: 15px
+      position: absolute
+      top: 15px
+      right: 0
 
-      @media screen and (min-width: 901px)
+      @media screen and (min-width: 911px)
         display: none
 
     #header_content
       margin: 20px 0
-      +order(3)
-      @media screen and (max-width: 900px)
+      @media screen and (max-width: 910px)
         +flex-grow(1)
 
       #header_info
         font-weight: 300
         text-align: right
 
-        @media screen and (max-width: 670px)
+        @media screen and (max-width: 725px)
           text-align: center
           border-top: 1px solid $primary_color
           padding-top: 15px
-        @media screen and (max-width: 290px)
+        @media screen and (max-width: 310px)
           font-size: 0.875em
         span
-          margin-left: 20px
           display: inline-block
+          @media screen and (min-width: 726px)
+            margin-left: 20px
 
-          @media screen and (max-width: 900px)
+          @media screen and (max-width: 910px)
             margin-bottom: 5px
 
 
@@ -78,7 +78,7 @@
         font-weight: 600
         margin-top: 20px
 
-        @media screen and (max-width: 900px)
+        @media screen and (max-width: 910px)
           display: none
         
         .menu_item
@@ -98,6 +98,9 @@
   max-height: 0
   transition: 0.5s
   overflow: hidden
+
+  @media screen and (min-width: 911px)
+    display: none
 
   &.active
     max-height: 500px

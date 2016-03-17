@@ -6,8 +6,8 @@
 #banner_container
   #banner_container_inner
     #banner_content
-      %h1 Physician Led Occupational Health and Wellbeing Services
-      %p High quality and trustworthy health services helping businesses in norfolk and suffolk
+      %h1 Occupational Health & Wellbeing Services
+      %p 360⁰ service encompassing Occupational Health Physicians, Occupational Health Nurse Advisors and Associate Professionals
       .action How we can help you
 
     #image_container
@@ -17,21 +17,14 @@
 
 #service_overview_container
   #service_overview_container_inner
-    %h1 occupational health and wellbeing services
+    %h1 how we can help you
     %p Your employees are one of your most valuable and yet most expensive assets. Here at Unity we work with you to safeguard this vital component of your business.
-    %p The cost of work related ill health to your business can be significant and far reaching; in addition to sick pay, there is also the cost of temporary cove and extra supervision, as well as reduced productivity and potential legal and compensation claims.
+    %p The cost of work related ill health to your business can be significant and far reaching; in addition to sick pay, there is also the cost of temporary cover and extra supervision, as well as reduced productivity and potential legal and compensation claims.
+    %p All your health surveillance requirements can be managed through a comprehensive system of on-going health checks. These health checks may be required by law for employees who are exposed to noise or vibration, ionising radiation, solvents, fumes, dusts, biological agents and other substances hazardous to health.
     = link_to 'Read More', services_path
 
 
-#service_teaser_container
-  #service_teaser_container_inner
-    - Service.all.each do |service|
-      .service_teaser
-        .service_teaser_inner
-          %h1= service.name
-          %p= truncate(service.teaser_body, length: 140, escape: false)
-          = link_to 'Learn More', service_path(service), {style: "background:#{service.color}"}
-          = image_tag service.teaser_image
+= render 'common/service_teasers'
 
 #blog_teasers_container
   #blog_teasers_container_inner
@@ -39,6 +32,6 @@
       .blog_teaser
         = image_tag blog.banner
         .blog_teaser_content
-          %h1= blog.name
+          %h1= link_to blog.name, blog
           .date= blog.updated_at.strftime("%B %Y")
         = link_to '>', blog

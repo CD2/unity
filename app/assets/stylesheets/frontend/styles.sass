@@ -40,6 +40,9 @@ body.service_page
     box-sizing: border-box
     position: relative
 
+    @media screen and (max-width: 700px)
+      padding-bottom: 0
+
     >h1
       font-weight: 300
       margin: 0
@@ -50,15 +53,19 @@ body.service_page
 
   #image_container
     position: absolute
-    right: 0
+    right: 25px
     bottom: 0
     width: 50%
+    padding-top: 20px
 
     @media screen and (max-width: 700px)
       margin: 0 auto
       position: relative
       width: 100%
-      max-width: 400px
+      max-width: 500px
+      right: 0
+      img:first-child
+        display: none
 
     img
       display: block

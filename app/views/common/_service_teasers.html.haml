@@ -1,0 +1,9 @@
+#service_teaser_container
+  #service_teaser_container_inner
+    - (@services || Service.all).each do |service|
+      .service_teaser
+        .service_teaser_inner
+          %h1= link_to service.name, service_path(service)
+          %p= truncate(service.teaser_body, length: 140, escape: false)
+          = link_to 'Learn More', service_path(service), {style: "background:#{service.color}"}
+          = image_tag service.teaser_image
