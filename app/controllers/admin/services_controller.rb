@@ -2,7 +2,7 @@ class Admin::ServicesController < AdminController
 
   set_resource Service
 
-  add_field :name
+  add_fields :name, :color
   add_field :teaser_image, type: :file_field
   add_fields :teaser_body, :header, :body
 
