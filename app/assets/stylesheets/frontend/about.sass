@@ -11,7 +11,7 @@
     color: white
     text-align: center
     font-size: 1.125em
-    padding: 40px 0 0
+    padding: 40px 20px 0
 
     h1
       font-weight: 300
@@ -31,15 +31,17 @@
   #main_content_panel_inner
     max-width: $site-width
     margin: 0 auto
+    padding: 0 20px
 
     h1
       font-weight: 300
       margin: 60px 0
+      line-height: 1.375em
 
 
 #our_people_panel
   background: $very_light_grey
-  height: 500px
+  min-height: 500px
   text-align: center
   color: rgba(black, 0.6)
   padding: 50px
@@ -57,6 +59,7 @@
     #people_container
       +flexbox
       +justify-content(space-around)
+      +flex-wrap(wrap)
       margin: 50px auto
 
       .person
@@ -86,6 +89,9 @@
   +flexbox
   margin-bottom: 100px
 
+  @media screen and (max-width: 775px)
+    +flex-direction(column)
+
   #left_column, #right_column
     +flex-grow(1)
     +flex-shrink(0)
@@ -105,7 +111,7 @@
       h1 
         font-weight: 300
         font-size: 2.125em
-        line-height: 2.5em
+        line-height: 1.5em
         color: rgba(black, 0.6)
 
   #right_column

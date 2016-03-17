@@ -3,6 +3,8 @@
   text-align: center
   color: white
   padding: 30px
+  @media screen and (max-width: 450px)
+    padding: 5px
   font-size: 1.125em
   #title_panel_inner
     max-width: $site-width - 300px
@@ -19,11 +21,16 @@
 
     #action_container
       +flexbox
+      @media screen and (max-width: 650px)
+        +flex-direction(column)
+
       a
         +flex(1)
+
         border-radius: 20px
-        padding: 20px 0
-        margin: 20px
+        padding: 20px 10px
+        @media screen and (min-width: 451px)
+          margin: 20px
         text-align: center
         cursor: pointer
         border: 1px solid white
@@ -33,6 +40,7 @@
     max-width: 600px
     margin: 70px auto 50px
     +flexbox
+
     label
       -webkit-user-select: none
       -moz-user-select: none

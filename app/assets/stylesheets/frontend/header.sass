@@ -4,12 +4,20 @@
   text-transform: uppercase
   font-size: 0.875em
   padding: 20px
-  
+
+  @media screen and (max-width: 900px)
+    padding: 10px
+  @media screen and (max-width: 400px)
+    padding: 5px
+
   #header_container_inner
     max-width: $site_width
     margin: 0 auto
     +flexbox
     +justify-content(space-between)
+
+    @media screen and (max-width: 670px)
+      +flex-wrap(wrap)
 
     @media screen and (max-width: 400px)
       +flex-direction(column)
@@ -28,12 +36,13 @@
     #slide_menu_button
       float: right
       font-size: 2em
-      margin: 0 15px 20px
+      margin: 0 10px 20px
       padding: 5px 10px
       cursor: pointer
       border: 1px solid $primary_color
       +align-self(center)
-
+      @media screen and (min-width: 670px)
+        +order(3)
       @media screen and (max-width: 400px)
         +align-self(flex-end)
         margin-top: 15px
@@ -51,13 +60,12 @@
         font-weight: 300
         text-align: right
 
-        @media screen and (min-width: 401px) and (max-width: 500px)
-          display: none
-        @media screen and (max-width: 400px)
+        @media screen and (max-width: 670px)
           text-align: center
           border-top: 1px solid $primary_color
           padding-top: 15px
-
+        @media screen and (max-width: 290px)
+          font-size: 0.875em
         span
           margin-left: 20px
           display: inline-block
@@ -89,9 +97,10 @@
   color: white
   max-height: 0
   transition: 0.5s
+  overflow: hidden
 
   &.active
-    max-height: 1000px
+    max-height: 500px
 
   .menu_item
     border-top: 1px solid rgba(white,0.3)

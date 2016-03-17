@@ -1,5 +1,5 @@
 #sidebar
-  #logo= link_to image_tag('logo_icon.png'), root_path
+  #logo= link_to image_tag('logo.png'), root_path
   = link_to 'Dashboard', admin_root_path, class: (controller_name=='dashboard'? 'active' : '')
   = link_to 'Services', admin_services_path, class: (controller_name=='services'? 'active' : '')
   = link_to 'Blogs', admin_blogs_path, class: (controller_name=='blogs'? 'active' : '')

@@ -1,6 +1,9 @@
 #form_panel
   +flexbox
 
+  @media screen and (max-width: 700px)
+    +flex-direction(column)
+
   #left_column, #right_column
     +flex-grow(1)
     +flex-shrink(0)
