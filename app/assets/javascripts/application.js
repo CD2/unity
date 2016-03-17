@@ -19,4 +19,8 @@ $(function(){
     $('#tabs_head_container label').removeClass('active')
     $('#tabs_head_container label[for="' + this.id + '"]').addClass('active')
   });
+
+  $('#slide_menu_button').on('click', function(){
+    $('#slide_menu').toggleClass('active');
+  });
 })

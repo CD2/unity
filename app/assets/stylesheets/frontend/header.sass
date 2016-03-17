@@ -13,25 +13,68 @@
     +flexbox
     +justify-content(space-between)
 
+    @media screen and (max-width: 400px)
+      +flex-direction(column)
+      +align-items(center)
+
+      #logo
+        +order(2)
+        
+        img
+          max-width: 100%
+
+
     #logo img
       margin: 10px 0 0
 
+    #slide_menu_button
+      float: right
+      font-size: 2em
+      margin: 0 15px 20px
+      padding: 5px 10px
+      cursor: pointer
+      border: 1px solid $primary_color
+      +align-self(center)
+
+      @media screen and (max-width: 400px)
+        +align-self(flex-end)
+        margin-top: 15px
+
+      @media screen and (min-width: 901px)
+        display: none
+
     #header_content
       margin: 20px 0
+      +order(3)
+      @media screen and (max-width: 900px)
+        +flex-grow(1)
 
       #header_info
         font-weight: 300
         text-align: right
 
+        @media screen and (min-width: 401px) and (max-width: 500px)
+          display: none
+        @media screen and (max-width: 400px)
+          text-align: center
+          border-top: 1px solid $primary_color
+          padding-top: 15px
+
         span
           margin-left: 20px
           display: inline-block
+
+          @media screen and (max-width: 900px)
+            margin-bottom: 5px
 
 
       #main_menu_container
         font-weight: 600
         margin-top: 20px
 
+        @media screen and (max-width: 900px)
+          display: none
+        
         .menu_item
           margin-left: 25px
           padding: 0 5px
@@ -41,3 +84,21 @@
 
           @media screen and (max-width: 970px)
             margin-left: 10px
+
+#slide_menu
+  background: $primary_color
+  text-align: center
+  color: white
+  max-height: 0
+  transition: 0.5s
+
+  &.active
+    max-height: 1000px
+
+  .menu_item
+    border-top: 1px solid rgba(white,0.3)
+    padding: 10px 20px
+    cursor: pointer
+
+    &:first-child
+      border: none
