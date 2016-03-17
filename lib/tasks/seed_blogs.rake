@@ -1,4 +1,4 @@
-task :gen_blogs do
+task gen_blogs: :environment do
 
     Blog.create!(name: 'HAVS information Sheet on gloves.')
     Blog.create!(name: 'Information on the new RCS service')
