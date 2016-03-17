@@ -18,7 +18,6 @@ gem 'fog'
 gem 'faker'
 gem 'figaro'
 gem 'whenever', :require => false
-gem 'ckeditor'
 gem 'will_paginate'
 
 
