@@ -2,7 +2,6 @@ module AdminApplicationHelper
 
   def form_fields
     @resource_fields.map do |rf|
-      byebug
       column_type = @resource_driver.columns_hash[rf.column_name].type
       field_type = rf.type || case column_type
       when :string
