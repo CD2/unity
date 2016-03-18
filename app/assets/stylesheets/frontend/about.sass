@@ -96,58 +96,33 @@
 
 
 #blue_dots_panel
-  +flexbox
   margin-bottom: 100px
+  background: $light_primary_color
 
-  @media screen and (max-width: 775px)
-    +flex-direction(column)
-
-  #left_column, #right_column
-    +flex-grow(1)
-    +flex-shrink(0)
-    +flex(1)
-  #left_column_inner, #right_column_inner
-    max-width: $site-width /2
-    padding: 40px
-
-  #left_column_inner
-    margin-left: auto
-  #right_column_inner
-    margin-right: auto
-
-  #left_column
-    background: #F0F1F1
-    #left_column_inner
-      h1 
-        font-weight: 300
-        font-size: 2.125em
-        line-height: 1.5em
-        color: rgba(black, 0.6)
-
-  #right_column
-    background: $light_primary_color
+  #blue_dots_panel_inner
+    max-width: $site-width - 500px
+    margin: 0 auto
     color: white
     font-size: 1.125em
+    padding: 40px
 
-    #right_column_inner
-    
-      h1
-        font-weight: 300
-        font-size: 2.5em
-      h2
-        text-transform: uppercase
-        font-size: 1em
-        line-height: 1.75em
-        margin: 30px 0
-      p
-        line-height: 1.5em
+    h1
+      font-weight: 300
+      font-size: 2.5em
+    h2
+      text-transform: uppercase
+      font-size: 1em
+      line-height: 1.75em
+      margin: 30px 0
+    p
+      line-height: 1.5em
 
-      a
-        padding: 20px 30px
-        border-radius: 25px
-        border: 1px solid white
-        display: block
-        text-align: center
-        cursor: pointer
-        max-width: 75%
-        margin: 40px 0
+    a
+      padding: 20px 30px
+      border-radius: 25px
+      border: 1px solid white
+      display: block
+      text-align: center
+      cursor: pointer
+      max-width: 75%
+      margin: 40px 0
