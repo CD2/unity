@@ -1,6 +1,6 @@
 = form_for([:admin, @resource]) do |f|
   - form_fields.each do |name, field_type, field_name|
-    .field
+    .field{class: field_name}
       = f.label field_name, name
       = f.send field_type, field_name
   .action
