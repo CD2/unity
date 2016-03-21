@@ -45,7 +45,7 @@
   padding: 50px
 
   #our_people_panel_inner
-    max-width: $site-width - 500px
+    max-width: 1250px
     margin: 0 auto
     height: 100%
 
@@ -63,6 +63,9 @@
 
       .person
         margin: 30px 0
+        display: inline-block
+        width: 45%
+        min-width: 400px
         +flexbox
         +align-items(flex-start)
         .circle
@@ -97,10 +100,11 @@
 
 #blue_dots_panel
   margin-bottom: 100px
-  background: $light_primary_color
+  background: $primary_color
+  text-align: center
 
   #blue_dots_panel_inner
-    max-width: $site-width - 500px
+    max-width: 750px
     margin: 0 auto
     color: white
     font-size: 1.125em
@@ -110,12 +114,12 @@
       font-weight: 300
       font-size: 2.5em
     h2
-      text-transform: uppercase
-      font-size: 1em
-      line-height: 1.75em
       margin: 30px 0
+      font-size: 1.375em
+      line-height: 1.75em
     p
       line-height: 1.5em
+      margin: 0 auto
 
     a
       padding: 20px 30px
@@ -125,4 +129,5 @@
       text-align: center
       cursor: pointer
       max-width: 75%
-      margin: 40px 0
+      margin: 40px auto
+      max-width: $site-width - 700px

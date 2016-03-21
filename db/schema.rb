@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(version: 20160317211618) do
   create_table "enquiries", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "phone"
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -70,13 +69,11 @@ ActiveRecord::Schema.define(version: 20160317211618) do
 
   create_table "services", force: :cascade do |t|
     t.string   "name"
-    t.text     "teaser_body"
-    t.string   "teaser_image"
-    t.text     "header"
+    t.string   "page_title"
+    t.text     "meta_description"
     t.text     "body"
-    t.string   "color"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "teams", force: :cascade do |t|

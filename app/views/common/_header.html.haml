@@ -4,7 +4,7 @@
   .menu_item{class: ('active' if ('/services' == current_item))}= link_to 'Services', services_path
   .menu_item{class: ('active' if ('/blogs' == current_item))}= link_to 'News', blogs_path
   .menu_item{class: ('active' if ('/about' == current_item))}= link_to 'About Unity', '/about'
-  .menu_item{class: ('active' if ('/resources' == current_item))}= link_to 'Resources', '/resources'
+  //.menu_item{class: ('active' if ('/resources' == current_item))}= link_to 'Resources', '/resources'
   .menu_item{class: ('active' if ('/contact_us' == current_item))}= link_to 'Contact', 'contact_us'
 
 #header_container
@@ -13,14 +13,14 @@
     #header_content
       #header_info
         %span e. mail@unityoccupationalhealth.com
-        %span t. 01603250015
+        %span t. 01603 250015
 
       #main_menu_container
         .menu_item{class: ('active' if ('/' == current_item))}= link_to 'Home', root_url
         .menu_item{class: ('active' if ('/services' == current_item))}= link_to 'Services', services_path
         .menu_item{class: ('active' if ('/blogs' == current_item))}= link_to 'News', blogs_path
         .menu_item{class: ('active' if ('/about' == current_item))}= link_to 'About Unity', '/about'
-        .menu_item{class: ('active' if ('/resources' == current_item))}= link_to 'Resources', '/resources'
+        //.menu_item{class: ('active' if ('/resources' == current_item))}= link_to 'Resources', '/resources'
         .menu_item{class: ('active' if ('/contact_us' == current_item))}= link_to 'Contact', 'contact_us'
    
     #slide_menu_button
