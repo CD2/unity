@@ -20,7 +20,6 @@ gem 'figaro'
 gem 'whenever', :require => false
 gem 'will_paginate'
 
-
 group :production do
   gem 'unicorn'
 end
