@@ -7,7 +7,6 @@ class CreateServices < ActiveRecord::Migration
       t.text :header
       t.text :body
       t.string :color
-      t.integer :weight
 
       t.timestamps null: false
     end
