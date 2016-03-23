@@ -7,6 +7,10 @@
     background-color: #{@service.color}
 
 #banner_container
+  - if @service.banner_image
+    :sass
+      #banner_container
+        background-image: url(#{@service.banner_image})
   #banner_container_inner
     %h1= @service.name
     .body_text_intro

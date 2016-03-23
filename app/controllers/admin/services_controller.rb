@@ -7,6 +7,7 @@ class Admin::ServicesController < AdminController
   add_field :color, type: :color_field
   add_field :teaser_image, type: :file_field
   add_fields :teaser_body, :header, :body
+  add_field :banner_image, type: :file_field
 
 
   # add_index_column :weight do |weight, service|
