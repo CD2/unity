@@ -6,6 +6,7 @@ class ServicesController < ApplicationController
 
 	def show
 		@service = Service.find(params[:id])
+    @enquiry = Enquiry.new
 	end
 
 end
