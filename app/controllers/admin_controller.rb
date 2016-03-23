@@ -81,7 +81,7 @@ class AdminController < ApplicationController
     end
 
     def resource_params
-      params.require(@resource_name.to_sym).permit(*@resource_fields.map { |rf| rf.field })
+      params.require(@resource_name.to_sym).permit(*@resource_fields.map { |rf| rf.field }, *@resource_hidden_fields)
     end
 
     def set_friendly_vars
@@ -97,6 +97,11 @@ class AdminController < ApplicationController
     def self.add_field field, options={}
       @resource_fields ||= []
       @resource_fields << Field.new(field, options)
+    end
+
+    def self.add_hidden_field field
+      @resource_hidden_fields ||= []
+      @resource_hidden_fields << field
     end
 
     def self.set_resource driver

@@ -1,0 +1,14 @@
+= render 'common/form_errors', object: @resource
+= form_for([:admin, @resource]) do |f|
+  - form_fields.each do |name, field_type, field_name|
+    .field{class: field_name}
+      = f.label field_name, name
+      = f.send field_type, field_name
+  .field{class: 'password'}
+    = f.label :password
+    = f.password_field :password
+  .field{class: 'password_confirmation'}
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
+  .action
+    = f.submit 'Save'
