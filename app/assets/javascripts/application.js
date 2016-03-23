@@ -24,4 +24,25 @@ $(function(){
   $('#slide_menu_button').on('click', function(){
     $('#slide_menu').toggleClass('active');
   });
+});
+
+$(function(){
+
+  $('select[name=weight]').on('change', function(){
+    var $thisRow = $(this).closest("tr")
+    if (this.value<$('select[name=weight]').index(this)) {
+      $thisRow.insertBefore($('select[name=weight]').eq(this.value).closest("tr"))
+    } else {
+      $thisRow.insertAfter($('select[name=weight]').eq(this.value).closest("tr"))
+    }
+    $('select[name=weight]').each(function(i){
+      this.value = i
+    });
+    var newOrder = {}
+    $.param($('select[name=weight]').each(function(i){
+      newOrder[i] = $(this).data('id');
+    }), true);
+    $.post('/admin/services/update_weight', {order: newOrder})
+  });
+
 })

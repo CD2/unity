@@ -10,6 +10,8 @@ module AdminApplicationHelper
         'cktext_area'
       when :boolean
         'check_box'
+      when :integer
+        'text_field'
       end
       [rf.name, field_type.to_sym, rf.field, column_type]
     end

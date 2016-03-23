@@ -18,7 +18,11 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'dashboard#index'
 
-    resources :services, except: [:show]
+    resources :services, except: [:show] do
+      collection do
+        post 'update_weight'
+      end
+    end
     resources :blogs, except: [:show]
     resources :pages, except: [:show]
     resources :teams, except: [:show]
