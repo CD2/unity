@@ -18,8 +18,8 @@
 
 #navigation_control
   #navigation_control_inner
-    - next_service = Service.find(@service.id+1>Service.maximum(:id) ? 1 : @service.id+1)
-    - prev_service = Service.find(@service.id-1<Service.minimum(:id) ? Service.maximum(:id) : @service.id-1)
+    - next_service = Service.find_by(order: @service.order+1>Service.maximum(:order) ? 1 : @service.order+1)
+    - prev_service = Service.find_by(order: @service.order-1<Service.minimum(:order) ? Service.maximum(:order) : @service.order-1)
     = link_to "< #{prev_service.name}", service_path(prev_service)
     = link_to "#{next_service.name} >", service_path(next_service)
 
