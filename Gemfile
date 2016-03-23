@@ -19,7 +19,7 @@ gem 'faker'
 gem 'figaro'
 gem 'whenever', :require => false
 gem 'will_paginate'
-
+gem 'rails_12factor', group: :production
 group :production do
   gem 'unicorn'
 end

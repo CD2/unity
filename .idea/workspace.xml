@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="895dc1bf-0b04-4d1c-83c2-9eff58d6fea1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/a7ff8d4ee180b3b21fe3894490f4d4cd0dee7b95/(__TEMPLATE__)c" afterPath="$PROJECT_DIR$/.sass-cache/a7ff8d4ee180b3b21fe3894490f4d4cd0dee7b95/(__TEMPLATE__)c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/executive_maintenance_website.iml" afterPath="$PROJECT_DIR$/.idea/executive_maintenance_website.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/frontend/about.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/frontend/about.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/frontend/footer.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/frontend/footer.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/frontend/home.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/frontend/home.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/frontend/service.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/frontend/service.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/frontend/styles.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/frontend/styles.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/common/_header.html.haml" afterPath="$PROJECT_DIR$/app/views/common/_header.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/about.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/about.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/home.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/services/show.html.haml" afterPath="$PROJECT_DIR$/app/views/services/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="executive_maintenance_website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,26 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pages_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="session_store.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,17 +64,84 @@
         <entry file="file://$PROJECT_DIR$/app/views/services/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <marker date="1458728875000" expanded="true" signature="0:46" placeholder="- provide :title, &quot;#{@service.name} | Service&quot;" />
+                <marker date="1458728875000" expanded="true" signature="47:84" placeholder="- provide :body_class, 'service_page'" />
+                <marker date="1458728875000" expanded="true" signature="85:118" placeholder="- provide :menu_item, '/services'" />
+                <marker date="1458728875000" expanded="true" signature="120:186" placeholder=":sass" />
+                <marker date="1458728875000" expanded="true" signature="187:421" placeholder="#banner_container" />
+                <marker date="1458728875000" expanded="true" signature="207:421" placeholder="#banner_container_inner" />
+                <marker date="1458728875000" expanded="true" signature="354:372" placeholder="%h1= @service.name" />
+                <marker date="1458728875000" expanded="true" signature="377:421" placeholder=".body_text_intro" />
+                <marker date="1458728875000" expanded="true" signature="400:421" placeholder="= raw @service.header" />
+                <marker date="1458728875000" expanded="true" signature="423:803" placeholder="#navigation_control" />
+                <marker date="1458728875000" expanded="true" signature="445:803" placeholder="#navigation_control_inner" />
+                <marker date="1458728875000" expanded="true" signature="475:560" placeholder="- next_service = Service.find(@service.id+1&gt;Service.maximum(:id) ? 1 : @service.id+1)" />
+                <marker date="1458728875000" expanded="true" signature="565:669" placeholder="- prev_service = Service.find(@service.id-1&lt;Service.minimum(:id) ? Service.maximum(:id) : @service.id-1)" />
+                <marker date="1458728875000" expanded="true" signature="741:803" placeholder="= link_to &quot;#{next_service.name} &gt;&quot;, service_path(next_service)" />
+                <marker date="1458728875000" expanded="true" signature="809:1098" placeholder="#service_panel" />
+                <marker date="1458728875000" expanded="true" signature="826:988" placeholder="#left_column" />
+                <marker date="1458728875000" expanded="true" signature="843:988" placeholder="#left_column_inner" />
+                <marker date="1458728875000" expanded="true" signature="868:887" placeholder="= raw @service.body" />
+                <marker date="1458728875000" expanded="true" signature="894:988" placeholder="= link_to 'call us on 01603 250015', 'tel:01603250015', style: &quot;background: #{@service.color}&quot;" />
+                <marker date="1458728875000" expanded="true" signature="992:1098" placeholder="#right_column" />
+                <marker date="1458728875000" expanded="true" signature="1010:1098" placeholder="#right_column_inner" />
+                <marker date="1458728875000" expanded="true" signature="1036:1066" placeholder="%p Or leave us a message below" />
+                <marker date="1458728875000" expanded="true" signature="1073:1098" placeholder="= render 'enquiries/form'" />
+                <marker date="1458728875000" expanded="true" signature="1110:1979" placeholder="#how_panel" />
+                <marker date="1458728875000" expanded="true" signature="1123:1979" placeholder="#how_panel_inner" />
+                <marker date="1458728875000" expanded="true" signature="1144:1334" placeholder=".how" />
+                <marker date="1458728875000" expanded="true" signature="1258:1334" placeholder=".body These doctors specialise in the health of individuals in the workplace" />
+                <marker date="1458728875000" expanded="true" signature="1339:1550" placeholder=".how" />
+                <marker date="1458728875000" expanded="true" signature="1457:1550" placeholder=".body Registered Specialist Community Public Health Nurse specialising in work related health" />
+                <marker date="1458728875000" expanded="true" signature="1555:1724" placeholder=".how" />
+                <marker date="1458728875000" expanded="true" signature="1651:1724" placeholder=".body Consultations can be undertaken either at Unity’s Clinic or on site" />
+                <marker date="1458728875000" expanded="true" signature="1729:1979" placeholder=".how" />
+                <marker date="1458728875000" expanded="true" signature="1819:1979" placeholder=".body Safe Effective Quality Occupational Health Service. Professionally accredited high quality services for businesses to manage the health of their employees" />
+                <marker date="1458728875000" expanded="true" signature="1981:2425" placeholder="#why_choose_panel{style: &quot;background: #{@service.color}&quot;}" />
+                <marker date="1458728875000" expanded="true" signature="2041:2425" placeholder="#why_choose_panel_inner" />
+                <marker date="1458728875000" expanded="true" signature="2094:2133" placeholder="%h2 protecting your most valuble assets" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seed_services.rake" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/seed_services.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seed_services.rake" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/seed_services.rake">
+      <file leaf-file-name="20160101200351_create_services.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20160101200351_create_services.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024709303">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/users/_form.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.08">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44827586">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -126,16 +159,6 @@
       </file>
       <file leaf-file-name="20160317211618_create_teams.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20160317211618_create_teams.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/page.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -167,7 +190,6 @@
         <option value="$PROJECT_DIR$/app/views/pages/resource.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/frontend/forms.sass" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/services/index.html.haml" />
         <option value="$PROJECT_DIR$/lib/tasks/seed_pages.rake" />
         <option value="$PROJECT_DIR$/lib/tasks/seed_services.rake" />
@@ -184,6 +206,8 @@
         <option value="$PROJECT_DIR$/app/views/common/_header.html.haml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20160101200351_create_services.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -193,8 +217,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1936" />
-    <option name="y" value="573" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1014" />
   </component>
@@ -223,9 +247,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="RailsProjectView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -609,16 +633,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1936" y="573" width="1920" height="1014" extended-state="0" />
+    <frame x="4" y="23" width="1920" height="1014" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24472573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45042193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896066" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,20 +672,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -879,14 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -919,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,15 +1006,76 @@
     <entry file="file://$PROJECT_DIR$/app/views/services/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1458728875000" expanded="true" signature="0:46" placeholder="- provide :title, &quot;#{@service.name} | Service&quot;" />
+            <marker date="1458728875000" expanded="true" signature="47:84" placeholder="- provide :body_class, 'service_page'" />
+            <marker date="1458728875000" expanded="true" signature="85:118" placeholder="- provide :menu_item, '/services'" />
+            <marker date="1458728875000" expanded="true" signature="120:186" placeholder=":sass" />
+            <marker date="1458728875000" expanded="true" signature="187:421" placeholder="#banner_container" />
+            <marker date="1458728875000" expanded="true" signature="207:421" placeholder="#banner_container_inner" />
+            <marker date="1458728875000" expanded="true" signature="354:372" placeholder="%h1= @service.name" />
+            <marker date="1458728875000" expanded="true" signature="377:421" placeholder=".body_text_intro" />
+            <marker date="1458728875000" expanded="true" signature="400:421" placeholder="= raw @service.header" />
+            <marker date="1458728875000" expanded="true" signature="423:803" placeholder="#navigation_control" />
+            <marker date="1458728875000" expanded="true" signature="445:803" placeholder="#navigation_control_inner" />
+            <marker date="1458728875000" expanded="true" signature="475:560" placeholder="- next_service = Service.find(@service.id+1&gt;Service.maximum(:id) ? 1 : @service.id+1)" />
+            <marker date="1458728875000" expanded="true" signature="565:669" placeholder="- prev_service = Service.find(@service.id-1&lt;Service.minimum(:id) ? Service.maximum(:id) : @service.id-1)" />
+            <marker date="1458728875000" expanded="true" signature="741:803" placeholder="= link_to &quot;#{next_service.name} &gt;&quot;, service_path(next_service)" />
+            <marker date="1458728875000" expanded="true" signature="809:1098" placeholder="#service_panel" />
+            <marker date="1458728875000" expanded="true" signature="826:988" placeholder="#left_column" />
+            <marker date="1458728875000" expanded="true" signature="843:988" placeholder="#left_column_inner" />
+            <marker date="1458728875000" expanded="true" signature="868:887" placeholder="= raw @service.body" />
+            <marker date="1458728875000" expanded="true" signature="894:988" placeholder="= link_to 'call us on 01603 250015', 'tel:01603250015', style: &quot;background: #{@service.color}&quot;" />
+            <marker date="1458728875000" expanded="true" signature="992:1098" placeholder="#right_column" />
+            <marker date="1458728875000" expanded="true" signature="1010:1098" placeholder="#right_column_inner" />
+            <marker date="1458728875000" expanded="true" signature="1036:1066" placeholder="%p Or leave us a message below" />
+            <marker date="1458728875000" expanded="true" signature="1073:1098" placeholder="= render 'enquiries/form'" />
+            <marker date="1458728875000" expanded="true" signature="1110:1979" placeholder="#how_panel" />
+            <marker date="1458728875000" expanded="true" signature="1123:1979" placeholder="#how_panel_inner" />
+            <marker date="1458728875000" expanded="true" signature="1144:1334" placeholder=".how" />
+            <marker date="1458728875000" expanded="true" signature="1258:1334" placeholder=".body These doctors specialise in the health of individuals in the workplace" />
+            <marker date="1458728875000" expanded="true" signature="1339:1550" placeholder=".how" />
+            <marker date="1458728875000" expanded="true" signature="1457:1550" placeholder=".body Registered Specialist Community Public Health Nurse specialising in work related health" />
+            <marker date="1458728875000" expanded="true" signature="1555:1724" placeholder=".how" />
+            <marker date="1458728875000" expanded="true" signature="1651:1724" placeholder=".body Consultations can be undertaken either at Unity’s Clinic or on site" />
+            <marker date="1458728875000" expanded="true" signature="1729:1979" placeholder=".how" />
+            <marker date="1458728875000" expanded="true" signature="1819:1979" placeholder=".body Safe Effective Quality Occupational Health Service. Professionally accredited high quality services for businesses to manage the health of their employees" />
+            <marker date="1458728875000" expanded="true" signature="1981:2425" placeholder="#why_choose_panel{style: &quot;background: #{@service.color}&quot;}" />
+            <marker date="1458728875000" expanded="true" signature="2041:2425" placeholder="#why_choose_panel_inner" />
+            <marker date="1458728875000" expanded="true" signature="2094:2133" placeholder="%h2 protecting your most valuble assets" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_services.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024709303">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20160101200351_create_services.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/users/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44827586">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>
