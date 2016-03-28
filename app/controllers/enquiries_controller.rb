@@ -9,12 +9,9 @@ class EnquiriesController < ApplicationController
 		if @enquiry.save
 			flash[:success] = 'Enquiry Created'
 			redirect_to contact_us_thanks_path
+      EnquiryMailer.new_enquiry(@enquiry).deliver_now
 		else
-      if params[:phone_form]
-        render root
-      else
-  			render :new
-      end
+  		render :new
 		end
 	end
 
