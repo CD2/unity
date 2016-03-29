@@ -87,9 +87,15 @@ body.login_page
     margin: 0 auto
     position: relative
     color: rgba(white, 0.75)
+    min-height: 35px
 
-    >a:last-child
+    >a+a:last-child
       float: right
+      
+      @media screen and (max-width: 490px)
+        text-align: right
+        float: initial
+        display: block
 
     .pagination
       text-align: center

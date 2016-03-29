@@ -7,7 +7,7 @@
   background-size: contain
 
   #banner_container_inner
-    width: 0.8 * $site-width
+    max-width: 0.8 * $site-width
 
   h1
     font-size: 2.375em
@@ -30,6 +30,9 @@
 #service_panel
   +flexbox
 
+  @media screen and (max-width: 800px)
+    +flex-direction(column)
+
   #left_column, #right_column
     +flex-grow(1)
     +flex-shrink(0)
@@ -39,7 +42,8 @@
       height: 70px
       font-size: 1.25em
   #right_column_inner
-    max-width: $site-width /3
+    @media screen and (min-width: 801px)
+      max-width: $site-width /3
   #left_column_inner
     max-width: $site-width /2
   #left_column_inner, #right_column_inner
@@ -55,7 +59,9 @@
       margin: 0
 
   #left_column_inner
-    margin-left: auto
+    @media screen and (min-width: 801px)
+      margin-left: auto
+
     ul
       padding-left: 10px
     li
@@ -105,6 +111,9 @@
     +flexbox
     +justify-content(space-around)
     margin: 50px auto
+
+    @media screen and (max-width: 730px)
+      +flex-wrap(wrap)
 
     .how
       text-align: center
