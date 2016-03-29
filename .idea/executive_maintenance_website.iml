@@ -179,7 +179,6 @@
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.99.1, RVM: ruby-2.2.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.4.0, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.8.4, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="modernizr-rails (v2.7.1, RVM: ruby-2.2.1) [gem]" level="application" />
@@ -194,6 +193,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-deprecated_sanitizer (v1.0.3, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v1.0.7, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.3, RVM: ruby-2.2.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_12factor (v0.0.3, RVM: ruby-2.2.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.5, RVM: ruby-2.2.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.4, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.4, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="raindrops (v0.16.0, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rbvmomi (v1.8.2, RVM: ruby-2.2.1) [gem]" level="application" />
@@ -209,7 +211,6 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.2, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="trollop (v2.1.2, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, RVM: ruby-2.2.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.7.2, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicorn (v5.0.1, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.3.0, RVM: ruby-2.2.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="whenever (v0.9.4, RVM: ruby-2.2.1) [gem]" level="application" />
