@@ -1,5 +1,5 @@
 class EnquiryMailer < ApplicationMailer
-  default from: 'enquiries@unityoccupationalhealth.com', to: 'hexmodr@gmail.com'#to: 'mail@unityoccupationalhealth.com'
+  default from: 'enquiries@unityoccupationalhealth.com', to: 'mail@unityoccupationalhealth.com'
 
   def new_enquiry enquiry
     @enquiry = enquiry

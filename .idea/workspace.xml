@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="895dc1bf-0b04-4d1c-83c2-9eff58d6fea1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/enquiry_mailer/new_enquiry.html.haml" afterPath="$PROJECT_DIR$/app/views/enquiry_mailer/new_enquiry.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/enquiry_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/enquiry_mailer.rb" />
     </list>
     <ignored path="executive_maintenance_website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,20 +99,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enquiry_mailer.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="enquiry_mailer.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/enquiry_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="81" selection-start-line="1" selection-start-column="81" selection-end-line="1" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.027113238">
+              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_enquiry.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new_enquiry.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/enquiry_mailer/new_enquiry.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33887044">
+            <state vertical-scroll-proportion="-34.68">
               <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <marker date="1459222010000" expanded="true" signature="38:874" placeholder="..." />
@@ -183,6 +182,7 @@
         <option value="$PROJECT_DIR$/lib/tasks/seed_team.rake" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/enquiry_mailer/new_enquiry.html.haml" />
+        <option value="$PROJECT_DIR$/app/mailers/enquiry_mailer.rb" />
       </list>
     </option>
   </component>
@@ -1007,17 +1007,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/enquiry_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="81" selection-start-line="1" selection-start-column="81" selection-end-line="1" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/enquiry_mailer/new_enquiry.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33887044">
+        <state vertical-scroll-proportion="-34.68">
           <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <marker date="1459222010000" expanded="true" signature="38:874" placeholder="..." />
@@ -1029,6 +1021,14 @@
             <marker date="1459222010000" expanded="true" signature="559:621" placeholder="..." />
             <marker date="1459222010000" expanded="true" signature="636:874" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/enquiry_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027113238">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
