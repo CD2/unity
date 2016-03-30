@@ -40,9 +40,10 @@
   #blog_teasers_container_inner
     - Blog.last(3).each do |blog|
       .blog_teaser
-        - if blog.banner.url
+        - if blog.banner
           = image_tag blog.banner
         .blog_teaser_content
-          %h1= link_to blog.name, blog
-          .date= blog.updated_at.strftime("%B %Y")
+          = link_to blog.name, blog
+          - if blog.published_date
+            .date= blog.published_date.strftime("%B %Y")
         = link_to '>', blog

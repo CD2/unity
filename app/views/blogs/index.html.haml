@@ -9,10 +9,12 @@
   #blogs_container_inner
     - @blogs.each do |blog|
       .blog_teaser
-        = image_tag blog.banner
+        - unless blog.banner.blank?
+          = image_tag blog.banner
         .blog_teaser_content
-          %h1= blog.name
-          .date= blog.updated_at.strftime("%B %Y")
+          = link_to blog.name, blog
+          - if blog.published_date
+            .date= blog.published_date.strftime("%B %Y")
         = link_to '>', blog
 
 #navigation_control

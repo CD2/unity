@@ -5,7 +5,8 @@
 #banner_container
   #banner_container_inner
     %h1= @blog.name
-    %p= @blog.updated_at.strftime("%B %Y")
+    - if @blog.published_date
+      %p= @blog.published_date.strftime("%B %Y")
 
   :sass
     hi

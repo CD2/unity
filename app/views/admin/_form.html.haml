@@ -1,3 +1,10 @@
+- if @resource.errors.any?
+  #errors_container
+    Sorry but this form contains
+    = pluralize @resource.errors.count, "error"
+    - @resource.errors.full_messages.each do |error|
+      .error= error
+
 = form_for([:admin, @resource]) do |f|
   - form_fields.each do |name, field_type, field_name|
     .field{class: field_name}
