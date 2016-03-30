@@ -1,3 +1,5 @@
+/ # - if @resource.errors.any?
+  / - @resource.errors.
 = form_for([:admin, @resource]) do |f|
   - form_fields.each do |name, field_type, field_name|
     .field{class: field_name}
