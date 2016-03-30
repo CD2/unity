@@ -9,7 +9,7 @@
   #blogs_container_inner
     - @blogs.each do |blog|
       .blog_teaser
-        - if blog.banner
+        - unless blog.banner.blank?
           = image_tag blog.banner
         .blog_teaser_content
           = link_to blog.name, blog
