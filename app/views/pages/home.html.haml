@@ -40,7 +40,8 @@
   #blog_teasers_container_inner
     - Blog.last(3).each do |blog|
       .blog_teaser
-        = image_tag blog.banner
+        - if blog.banner
+          = image_tag blog.banner
         .blog_teaser_content
           = link_to blog.name, blog
           - if blog.published_date
