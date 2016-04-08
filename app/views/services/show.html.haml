@@ -31,7 +31,7 @@
   #left_column
     #left_column_inner
       = raw @service.body
-      = link_to 'call us on 01603 250015', 'tel:01603250015', style: "background: #{@service.color}"
+      %span{style: "background: #{@service.color}"}= 'call us on 01603 250015'
 
   #right_column
     #right_column_inner

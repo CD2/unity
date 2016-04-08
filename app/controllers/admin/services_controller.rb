@@ -14,7 +14,6 @@ class Admin::ServicesController < AdminController
   #   ("<select data-id='#{service.id}' name='weight'>" + Service.count.times.map { | i | "<option value='#{i}' #{'selected' if i==weight-1}>#{i}</option>"}.join('') + '</select>').html_safe
   # end
   add_index_column :name
-  add_index_column :weight, 'Order'
 
   show_index_view
 
