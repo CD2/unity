@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'map/show'
+
+  get 'map/edit'
+
+  get 'map/update'
+
+  get 'map/add_point'
+
+  get 'map/remove_point'
+
   mount Ckeditor::Engine => '/ckeditor'
   root 'pages#show'
 
